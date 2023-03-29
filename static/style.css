@@ -1,0 +1,276 @@
+@import url(./css/header.css);
+@import url(./css/header/header-middle.css);
+@import url(./css/header/header-top.css);
+@import url(./css/header/header-bottom.css);
+@import url(./css/carousel/carousel.css);
+@import url(./css/banner/banner.css);
+@import url(./css/footer/footer.css);
+@import url(./css/blog/blog.css);
+@import url(./css/category-items/category-item.css);
+@import url(./css/category-items/photo.css);
+@import url(./css/blog/feature.css);
+@import url(./css/shop/shop.css);
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: calc(100% - 40px * 2);
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overlay {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #4d4d4d;
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    width: calc(100% - 60px * 2);
+  }
+
+  .row {
+    display: block;
+    margin: 15px 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    width: calc(100% - 15px * 2);
+  }
+}
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.nightstands-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
+  height: 30px;
+  padding-top: 90px;
+}
+
+.nightstands-wrapper>h4 {
+  margin-bottom: 30px;
+}
+
+.nightstands-title {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  height: 20px;
+  margin-bottom: 30px;
+
+}
+
+.line {
+  width: 40%;
+  height: 0px;
+  margin-top: 40px;
+  border-top: 1px solid rgb(102, 98, 98);
+}
+
+/* //////////////////////////////////////////////////////////////////// */
+
+.featured-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-wrapper>h4 {
+  margin-bottom: 30px;
+}
+
+.featured-title {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  height: 20px;
+
+}
+
+.line {
+  width: 40%;
+  height: 0px;
+  margin-top: 40px;
+  border-top: 1px solid rgb(102, 98, 98);
+}
+
+
+/* //////////////////////////////////////////////////////////////////// */
+
+.featured-cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 30px;
+}
+
+.featured-card {
+  height: 400px;
+  width: 300px;
+  padding: 20px;
+  padding: 10px;
+  position: relative;
+}
+
+.featured-card>img {
+  height: 250px;
+  width: 200px;
+}
+
+.card-name {
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.card-cost {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.card-status-new {
+  height: 40px;
+  width: 90px;
+  background-color: rgb(100, 148, 237);
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.card-status-sale {
+  height: 40px;
+  width: 90px;
+  background-color: rgb(172, 160, 49);
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.card-status-sale>p {
+  color: white;
+  font-size: 25px;
+  padding: auto;
+}
+
+.card-status-new>p {
+  color: white;
+  font-size: 25px;
+  padding: auto;
+}
+
+/* ////////////////////////////////////////////// */
+
+.furniture-wrapper {
+  display: flex;
+  gap: 30px;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.furniture-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.furniture-card1 {
+  height: 400px;
+  width: 300px;
+  position: relative;
+
+}
+
+.furniture-card1>img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.furniture-card1>p {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  background-color: rgba(189, 185, 185, 0.514);
+  padding: 10px;
+  font-size: 30px;
+}
+
+
+.furniture-card2 {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  
+}
+
+.furniture-card2>img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.furniture-card2>p {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  background-color: rgba(189, 185, 185, 0.514);
+  padding: 10px;
+  font-size: 30px;
+}
+
+
+
+.furniture-card3 {
+  height: 730px;
+  width: 300px;
+  position: relative;
+  
+}
+
+.furniture-card3>img {
+  height: 730px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.furniture-card3>p {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  background-color: rgba(189, 185, 185, 0.514);
+  padding: 10px;
+  font-size: 30px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */

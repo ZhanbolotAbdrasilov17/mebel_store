@@ -1,0 +1,30 @@
+.shop-scrapper {
+    /* height: 100vh; */
+    display: flex;
+    padding: 20px;
+}
+
+.left-side {
+    border: 2px solid black;
+    width: 20%;
+    height: 100%;
+}
+
+.right-side {
+    border: 2px solid red;
+    width: 80%;
+    height: 100%;
+}
+
+.photo-main {
+    width: 100%;
+    height: 300px;
+    background-image: url(../../images-shop/photo-main.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.shop-title {
+    font-size: 30px;
+    font-weight: 700;
+}

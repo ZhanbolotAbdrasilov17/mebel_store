@@ -1,0 +1,66 @@
+.menu-wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.main-menu {
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-menu nav ul {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menu nav li {
+  margin: 18px 0;
+  position: relative;
+}
+
+.main-menu nav a {
+  display: block;
+  font-size: 13px;
+  padding: 0 30px;
+}
+
+.main-menu nav ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  display: none;
+  transition: all 0.4s ease;
+}
+
+.main-menu nav ul ul li {
+  display: block;
+}
+
+.main-menu nav ul ul li a {
+  color: #000;
+}
+
+nav li:hover > ul {
+  display: block;
+  margin-top: 18px;
+  width: 250px;
+  padding: 20px;
+  font-size: 12px;
+  transition: all 0.4s ease;
+  z-index: 5;
+}
+
+@media screen and (max-width: 990px) {
+  .mainmenu-area {
+    display: none;
+  }
+}
