@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+{% load i18n%}
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -17,7 +18,7 @@
       <div class="container">
         <div class="row">
           <div class="welcome-greeting">
-            <span class="welcome-text">Welcome you to ArtFurniture store!</span>
+            <span class="welcome-text">{% trans "Welcome you to ArtFurniture store!" %}</span>
           </div>
           <div class="utils">
             <ul>
@@ -36,6 +37,23 @@
     </div>
 
     <hr>
+
+       <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                                    <input name="next" type="hidden" value="{{ redirect_to }}">
+                                    <select name="language" onchange="this.form.submit()">
+                                        {% get_current_language as LANGUAGE_CODE %}
+                                        {% get_available_languages as LANGUAGES %}
+                                        {% get_language_info_list for LANGUAGES as languages %}
+                                        {% for language in languages %}
+
+                                        <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}
+                                                selected{% endif %}>
+                                            {{ language.name_local }}
+                                        </option>
+                                        {% endfor %}
+                                    </select>
+                                    <!--									<input type="submit" value="ОК">-->
+                                </form>
 
     <div class="header-middle-area">
       <div class="container">
