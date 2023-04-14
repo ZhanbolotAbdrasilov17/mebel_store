@@ -6,6 +6,7 @@
 .main-menu {
   width: 100%;
   height: auto;
+  
 }
 
 nav {
@@ -14,49 +15,70 @@ nav {
   text-transform: uppercase;
 }
 
+.catalog-box:hover {
+  background-color: #90a1a7
+}
+
 .main-menu nav ul {
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  gap: 35px;
   align-items: center;
 }
 
-.main-menu nav li {
+.main-menu nav ul li {
   margin: 18px 0;
+  /* border-right: 1px solid #fff;
+  border-left: 1px solid #fff; */
   position: relative;
+  transition: all 1s ease;
 }
 
-.main-menu nav a {
+.main-menu nav ul li a {
   display: block;
-  font-size: 13px;
+  font-size: 12px;
   padding: 0 30px;
 }
 
-.main-menu nav ul ul {
+.main-menu nav li:not(:last-child)::after{
+  content: "";
   position: absolute;
-  top: 100%;
+  top: 0px;
+  right: -25px;
+  bottom: 0px;
+  left: -10px;
+  border-right: 1px solid #c6cfd2;
+  
+}
+
+
+.main-menu nav li:last-child::after {
+  display: none;
+}
+
+
+.main-menu nav ul ul {
+}
+
+.main-menu nav ul li ul {
+  min-width: 150px;
+  display: none;
+  position: absolute;
+  top: 15px;
   left: 0;
   background-color: #fff;
-  display: none;
-  transition: all 0.4s ease;
-}
-
-.main-menu nav ul ul li {
-  display: block;
-}
-
-.main-menu nav ul ul li a {
-  color: #000;
-}
-
-nav li:hover > ul {
-  display: block;
-  margin-top: 18px;
-  width: 250px;
-  padding: 20px;
-  font-size: 12px;
-  transition: all 0.4s ease;
   z-index: 5;
+  transition: all 1s ease;
+}
+
+.main-menu nav ul li:hover ul {
+  display: block;
+
+}
+
+.main-menu nav ul li ul li a {
+  color: black;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 990px) {

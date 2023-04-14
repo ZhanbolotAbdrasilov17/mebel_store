@@ -1,18 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* * {
+    font-family: 'Poppins', sans-serif;
+
+} */
+
+body {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
 .shop-scrapper {
     /* height: 100vh; */
     display: flex;
-    padding: 20px;
+    padding: 30px 40px 0 40px;
+    justify-content: space-around;
 }
 
 .left-side {
-    border: 2px solid black;
-    width: 20%;
+    /* border: 2px solid black; */
+    width: 25%;
     height: 100%;
 }
 
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    padding: 20px 20px 40px 20px;
+    gap: 10px;
+
+}
+
+.sidebar > h1 {
+    font-weight: 700;
+    height: 30px;    
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 16px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    /* gap: 100px; */
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.filter * {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.checkbox-container {
+    display: flex;
+    gap: 10px;
+    /* display: none; */
+    transition: 1s;
+    
+}
+
+.bars-scrapper {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+}
+/* 
+.bars-scrapper * {
+
+} */
+
+.colors {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.red {
+    background-color: red;
+    width: 30px;
+    height: 15px;
+}
+
+
+
+
+span {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.arrow_example_0 {
+    width: 5px;
+    height: 5px;
+    border-top: 1.5px solid #000000 ;
+    border-right: 1.5px solid #000000 ;
+    margin-top: 2px;
+    display: inline-block;
+    transition: 0.1s;
+    transform: rotate(-45deg);
+   
+}
+
+.block {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    gap: 50px;
+    
+}
+
+
+
+
+
+/* 7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777 */
+
 .right-side {
-    border: 2px solid red;
-    width: 80%;
+    /* border: 2px solid red; */
+    width: 70%;
     height: 100%;
 }
 
@@ -25,6 +146,108 @@
 }
 
 .shop-title {
+    color: #444;
     font-size: 30px;
     font-weight: 700;
+    margin-bottom: 15px;
 }
+
+.shop-sort-box {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #e9e9e9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 10px;
+    padding: 0 10px 0 10px;
+}
+
+.shop-slider-box {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #e9e9e9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 10px 0 10px;
+    margin-top: 30px;
+}
+
+.position-scrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.position {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+.sort-scrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.shop-itemS {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+}
+
+.shop-item {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    align-items: center;
+    gap: 5px;
+}
+
+.shop-item > .shop-item-name {
+    color: #676767;
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+}
+
+.shop-item > .shop-item-price {
+    color: #676767;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+}
+
+.shop-item-photo {
+    background-image: url(../../images-shop/shop-item-photo.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+}
+
+
+select {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #f1f1f1;
+    box-shadow: none;
+    color: #444444;
+    cursor: pointer;
+    font-size: 13px;
+    height: 30px;
+    margin: 2px 0 0;
+    text-transform: capitalize;
+    width: auto;
+}
+
+option {
+    background: #fff;
+    border: 0px solid #626262;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+

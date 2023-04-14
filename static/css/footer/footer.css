@@ -13,6 +13,7 @@
     margin-top: -20px;
 }
 
+
 .footer-info {
     margin-top: 20px;
     display: flex;
@@ -68,9 +69,8 @@
     color: #676767;
     margin-top: 20px;
     margin-bottom: 20px;
+
 }
-
-
 
 
 
@@ -82,16 +82,20 @@ footer {
     padding: 80px 30px 30px 30px;
     margin-top: 55px;
     border: 1px solid #d9dadf;
-  }
+}
   
-  .footer-bottom {
+.footer-bottom {
     padding-top: 30px;
     background-color: white;
     border: 1px solid #d9dadf;
     width: 100%;
     height: 100px;
   
-  }
+}
+
+.footer-b-left {
+    text-align: center;
+}
 
 @media screen and (max-width: 1180px){
     footer {
@@ -115,4 +119,142 @@ footer {
 
 @media screen and (max-width: 530px) {
 
+}
+
+.container-partners {
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    border: 1px solid #d9dadf;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.partner {
+    cursor: pointer;
+}
+
+.partner path{
+    
+    transition: fill 0.45s;
+}
+
+.partner:hover path {
+    fill: black;
+}
+
+
+@keyframes move {
+    from {
+        left: 90%;
+    }
+    to {
+        left: -60%;
+    }
+}
+
+@keyframes move2 {
+    from {
+        left: 120%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+/* @keyframes move3 {
+    from {
+        left: 0%;
+    }
+    to {
+        left: -60%;
+    }
+}
+
+@keyframes move4 {
+    from {
+        left: 150%;
+    }
+    to {
+        left: 0%;
+    }
+}  */
+
+
+
+
+
+.left-box {
+    width: 10%;
+    height: 100%;
+    background-color: #f6f6f6;
+    position: absolute;
+    z-index: 2;
+}
+
+.right-box {
+    width: 10%;
+    height: 100%;
+    background-color: #f6f6f6;
+    position: absolute;
+    left: 90%;
+}
+
+.container-message {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 30px 0 30px;
+    margin-top: 100px;
+}
+
+.message-block {
+    width: 30%;
+    height: 420px;
+    background-color: lightgrey;
+
+    padding: 0 40px 0 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.message-photo {
+    width: 130px;
+    height: 130px;
+    /* background-color: YELLOW; */
+    background-image: url(https://kartinkin.net/pics/uploads/posts/2022-08/1660617551_30-kartinkin-net-p-raian-gosling-oboi-krasivo-34.jpg);
+    margin-top: -60px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 10px solid white;
+}
+
+.message-text {
+    font-size: 1.0625rem;
+    line-height: 2;
+    text-align: center;
+}
+
+.message-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.message-bottom > h2 {
+    color: #2590f4;
+    font-weight: 700;
+}
+
+.message-bottom > p {
+    margin: 7px 0 7px 0;
 }

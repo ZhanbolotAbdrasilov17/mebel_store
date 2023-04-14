@@ -1,0 +1,777 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load i18n%}
+{% block page %}
+
+<div class="burger-nav">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="slide1">
+          <h1 class="sliderTitle1">Collection</h1>
+          <h1 class="sliderTitle2">Lamps light Color</h1>
+          <p class="sliderDes">
+            Eikon is made of certified wood and a lampshade that is attached
+            simply with the help of magnets.
+          </p>
+          <button class="sliderButton">Shop now</button>
+        </div>
+        <div class="swiper-slide" id="slide2">
+          <h1  class="sliderTitle1">inimalist design</h1>
+          <h1  class="sliderTitle2">inimalist design</h1>
+          <p class="sliderDes">
+            Doko Demo is a minimalist design created by Copenhagen-based
+            designer CZYK
+          </p>
+          <button class="sliderButton">Shop now</button>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- Banner with 3 items start -->
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="child hanging-light">
+            <a href="#"
+              ><img
+                src="https://htmldemo.net/artfurniture/artfurniture/assets/img/banner/1.jpg"
+                alt="#"
+            /></a>
+          </div>
+          <div class="child minimal-chair">
+            <a href="#"
+              ><img
+                src="https://htmldemo.net/artfurniture/artfurniture/assets/img/banner/2.jpg"
+                alt="#"
+            /></a>
+          </div>
+          <div class="child design-sofa">
+            <a href="#"
+              ><img
+                src="https://htmldemo.net/artfurniture/artfurniture/assets/img/banner/3.jpg"
+                alt="#"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner with 3 items ends -->
+
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <div class="nightstands-wrapper">
+      <h4>NEW SHOP ITEM</h4>
+      <div class="nightstands-title">
+        <div class="line-night">
+          <h1>NIGHTSTANDS</h1>
+        </div>
+      </div>
+
+      <div class="furniture-wrapper">
+        <div class="furniture-card-wrapper">
+          <div class="furniture-card1">
+            <img
+              src="https://htmldemo.net/artfurniture/artfurniture/assets/img/banner/4.jpg"
+              alt=""
+            />
+            <p>Chair collection</p>
+          </div>
+
+          <div class="furniture-card2">
+            <img
+              src="https://htmldemo.net/artfurniture/artfurniture/assets/img/banner/6.jpg"
+              alt=""
+            />
+            <p>Chair collection</p>
+          </div>
+        </div>
+
+        <div class="furniture-card3">
+          <img
+            src="https://htmldemo.net/artfurniture/artfurniture/assets/img/banner/5.jpg"
+            alt=""
+          />
+          <p>Chair collection</p>
+        </div>
+
+        <div class="furniture-card-wrapper">
+          <div class="furniture-card2">
+            <img
+              src="https://htmldemo.net/artfurniture/artfurniture/assets/img/banner/7.jpg"
+              alt=""
+            />
+            <p>Chair collection</p>
+          </div>
+
+          <div class="furniture-card1">
+            <img
+              src="https://htmldemo.net/artfurniture/artfurniture/assets/img/banner/9.jpg"
+              alt=""
+            />
+            <p>Chair collection</p>
+          </div>
+        </div>
+
+        <div class="furniture-card3">
+          <img
+            src="https://htmldemo.net/artfurniture/artfurniture/assets/img/banner/5.jpg"
+            alt=""
+          />
+          <p>Chair collection</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="featured-wrapper">
+      <h4>FEATURED SHOP ITEMS</h4>
+      <div class="featured-title">
+        <div class="line-feature">
+          <h1>FEATURED PRODUCTS</h1>
+        </div>
+      </div>
+
+      <div class="featured-cards">
+        <div class="featured-cards">
+          <div class="featured-card">
+            <img
+              src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/14.jpg"
+              alt=""
+            />
+            <p class="card-name">Strive Shoulder Pack</p>
+            <p class="card-cost">$32.00</p>
+          </div>
+
+          <div class="featured-card">
+            <div class="card-status-sale">
+              <p>Sale</p>
+            </div>
+            <img
+              src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/25.jpg"
+              alt=""
+            />
+            <p class="card-name">Strive Shoulder Pack</p>
+            <p class="card-cost">$76.00</p>
+          </div>
+
+          <div class="featured-card">
+            <div class="card-status-sale">
+              <p>Sale</p>
+            </div>
+            <img
+              src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/31.jpg"
+              alt=""
+            />
+            <p class="card-name">Strive Shoulder Pack</p>
+            <p class="card-cost">$23.00</p>
+          </div>
+
+          <div class="featured-card">
+            <div class="card-status-new">
+              <p>New</p>
+            </div>
+            <img
+              src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/17.jpg"
+              alt=""
+            />
+            <p class="card-name">Strive Shoulder Pack</p>
+            <p class="card-cost">$56.00</p>
+          </div>
+
+          <div class="featured-card">
+            <div class="card-status-new">
+              <p>New</p>
+            </div>
+            <img
+              src="https://www.ikea.com/us/en/images/products/lerhamn-chair-black-brown-vittaryd-beige__0728160_pe736117_s5.jpg"
+              alt=""
+            />
+            <p class="card-name">Strive Shoulder Pack</p>
+            <p class="card-cost">$78.00</p>
+          </div>
+
+          <div class="featured-card">
+            <div class="card-status-sale">
+              <p>Sale</p>
+            </div>
+            <img
+              src="https://www.ikea.com/us/en/images/products/lerhamn-chair-black-brown-vittaryd-beige__0728160_pe736117_s5.jpg"
+              alt=""
+            />
+            <p class="card-name">Strive Shoulder Pack</p>
+            <p class="card-cost">$78.00</p>
+          </div>
+
+          <div class="featured-card">
+            <div class="card-status-new">
+              <p>new</p>
+            </div>
+            <img
+              src="static 'https://www.muuto.com/globalassets/digizuite/2111-en-nerd-chair-sand-yellow-muuto-5000x5000-hi-res.tif?mediaformatid=50101&extension=.png"
+              alt=""
+            />
+            <p class="card-name">Strive Shoulder Pack</p>
+            <p class="card-cost">$78.00</p>
+          </div>
+
+          <div class="featured-card">
+            <div class="card-status-sale">
+              <p>Sale</p>
+            </div>
+            <img
+              src="https://content.la-z-boy.com/Images/product/category/white/large/235401.jpg"
+              alt=""
+            />
+            <p class="card-name">Strive Shoulder Pack</p>
+            <p class="card-cost">$78.00</p>
+          </div>
+
+          <div class="featured-card">
+            <div class="card-status-sale">
+              <p>Sale</p>
+            </div>
+            <img
+              src="data:image/jpeg;base64,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"
+              alt=""
+            />
+            <p class="card-name">Strive Shoulder Pack</p>
+            <p class="card-cost">$78.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container-main"> -->
+
+    <!-- _________ITEMS________ -->
+    <div class="scrapper-items">
+      <!-- --------------------------------------------------------------- -->
+      <div class="item-1">
+        <div class="title-random-top">Random Furniture</div>
+        <div class="title-random-bottom">Random Products</div>
+
+        <div class="post post-1">
+          <div class="product">
+            <div class="photo1"></div>
+            <div class="description">
+              <div class="description__title">Push It Messanger Bag</div>
+              <div class="description__rating"></div>
+              <div class="description__price">$10.00</div>
+            </div>
+          </div>
+
+          <div class="product pr-1">
+            <div class="photo2"></div>
+            <div class="description">
+              <div class="description__title">Sprite Foam Yoga Brick</div>
+              <div class="description__rating"></div>
+              <div class="description__price">$20.00</div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="photo3"></div>
+            <div class="description">
+              <div class="description__title">Dual Handle Cardio Ball</div>
+              <div class="description__rating"></div>
+              <div class="description__price">$20.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------------------------------------- -->
+      <div class="item2">
+        <div class="title-random-top">Random Furniture</div>
+        <div class="title-random-bottom">Random Products</div>
+
+        <div class="post">
+          <div class="product">
+            <div class="photo4"></div>
+            <div class="description">
+              <div class="description__title">Sprite Foam Yoga Brick</div>
+              <div class="description__rating"></div>
+              <div class="description__price">$10.00</div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="photo5"></div>
+            <div class="description">
+              <div class="description__title">Sprite Foam Yoga Brick</div>
+              <div class="description__rating"></div>
+              <div class="description__price">$20.00</div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="photo6"></div>
+            <div class="description">
+              <div class="description__title">Sprite Foam Yoga Brick</div>
+              <div class="description__rating"></div>
+              <div class="description__price">$20.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------------------------------------- -->
+      <div class="item3">
+        <div class="title-random-top">Random Furniture</div>
+        <div class="title-random-bottom">Random Products</div>
+
+        <div class="post num1">
+          <div class="product">
+            <div class="photo7"></div>
+            <div class="description">
+              <div class="description__title">Push It Messanger Bag</div>
+              <div class="description__rating"></div>
+              <div class="description__price">$10.00</div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="photo8"></div>
+            <div class="description">
+              <div class="description__title">Sprite Foam Yoga Brick</div>
+              <div class="description__rating"></div>
+              <div class="description__price">$20.00</div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="photo9"></div>
+            <div class="description">
+              <div class="description__title">Sprite Foam Yoga Brick</div>
+              <div class="description__rating"></div>
+              <div class="description__price">$20.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------------------------------------- -->
+      <div class="item4">
+        <div class="title-random-top">Random Furniture</div>
+        <div class="title-random-bottom">Random Products</div>
+
+        <div class="post num1">
+          <div class="product">
+            <div class="photo10"></div>
+            <div class="description">
+              <div class="description__title">Push It Messanger Bag</div>
+              <div class="description__rating"></div>
+              <div class="description__price">$10.00</div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="photo11"></div>
+            <div class="description">
+              <div class="description__title">Sprite Foam Yoga Brick</div>
+              <div class="description__rating"></div>
+              <div class="description__price">$20.00</div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="photo12"></div>
+            <div class="description">
+              <div class="description__title">Sprite Foam Yoga Brick</div>
+              <div class="description__rating"></div>
+              <div class="description__price">$20.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------------------------------------- -->
+    </div>
+    <!-- _________ITEMS-END________ -->
+
+    <!-- _________BLOGS_________ -->
+    <div class="scrapper-blogs">
+      <!-- -----------ЗАГОЛОВОК------------- -->
+      <div class="title-news">Latest New</div>
+      <div class="line-blog">
+        <div class="main-title-blog">From our Blog</div>
+      </div>
+      <!-- -----------КОНЕЦ-ЗАГОЛОВКА------------- -->
+
+      <!-- --------------ОСНОВНАЯ-ЧАСТЬ-БЛОГА---------------- -->
+      <div class="container-blog">
+        <div class="bl__item bl-left-itm">
+          <div class="blog-photo bl-left-ph">
+            <div class="blog-data bl-left-dt">
+              <p>05</p>
+              <p>July</p>
+            </div>
+          </div>
+          <div class="blog-title bl-left-tt">
+            EODEM MODO TYPI QUI NUNC NOBIS
+          </div>
+          <div class="blog-info bl-left-info">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </div>
+        </div>
+
+        <div class="bl__item bl-middle-itm">
+          <div class="blog-photo bl-middle-ph">
+            <div class="blog-data bl-middle-dt">
+              <p>20</p>
+              <p>June</p>
+            </div>
+          </div>
+          <div class="blog-title bl-middle-tt">
+            TYPI NON HABENT CLARITATEM INSITAM
+          </div>
+          <div class="blog-info bl-middle-info">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form.
+          </div>
+        </div>
+
+        <div class="bl__item bl-rifht-itm">
+          <div class="blog-photo bl-right-ph">
+            <div class="blog-data bl-right-dt">
+              <p>15</p>
+              <p>May</p>
+            </div>
+          </div>
+          <div class="blog-title bl-right-tt">
+            CLARITAS EST ETIAM PROCESS DYNAME
+          </div>
+          <div class="blog-info bl-right-info">
+            Mirum est notare quam littera gothica, quam nunc putamus parum
+            claram, anteposuerit litterarum lorem ipsum dolor asmet.
+          </div>
+        </div>
+      </div>
+      <!-- <div class="line-end"></div> -->
+
+      <!-- -------------КОНЕЦ-ОСНОВНОГО-БЛОГА---------------- -->
+      <!-- ----------------ОСОБЕННОСТИ---------------- -->
+      <div class="feature-container">
+        <div class="feature">
+          <div class="logo-delivery"></div>
+          <div class="feature-info">
+            <div class="feature-title">FREE SHIPPING</div>
+            <div class="feature-text">Free shipping on all US order</div>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="logo-online"></div>
+          <div class="feature-info">
+            <div class="feature-title">ONLINE SUPPORT 24/7</div>
+            <div class="feature-text">Support online 24 hours a day</div>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="logo-money"></div>
+          <div class="feature-info">
+            <div class="feature-title">MONEY RETURN</div>
+            <div class="feature-text">Back guarantee under 7 days</div>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="logo-member"></div>
+          <div class="feature-info">
+            <div class="feature-title">MONEY RETURN</div>
+            <div class="feature-text">Back guarantee under 7 days</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container-message">
+      <div class="message-block">
+        <div class="message-photo"></div>
+        <div class="message-text">  Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin.  </div>
+        <div class="message-bottom">
+          <h2>Rayan Gosling</h2>
+          <p>Chief Accountant</p>
+        </div>
+      </div>
+
+      <div class="message-block">
+        <div class="message-photo"></div>
+        <div class="message-text">  Pharetra vel turpis nunc eget lorem. Quisque id diam vel quam elementum pulvinar etiam. Urna porttitor rhoncus dolor purus non enim praesent elementum. </div>
+        <div class="message-bottom">
+          <h2>Rayan Gosling</h2>
+          <p>Chief Accountant</p>
+        </div>
+
+      </div>
+
+      <div class="message-block">
+        <div class="message-photo"></div>
+        <div class="message-text">   Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin. Nibh nisl dictumst vestibulum rhoncus est pellentesque elit.    </div>
+        <div class="message-bottom">
+          <h2>Rayan Gosling</h2>
+          <p>Chief Accountant</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-partners">
+      <div class="partner">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="100px" height="100px" viewBox="0 0 1200.000000 809.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,809.000000) scale(0.100000,-0.100000)"
+fill="#5f5f5f" stroke="none">
+<path d="M6273 7582 c-597 -343 -881 -511 -878 -520 3 -8 557 -974 1232 -2148
+l1228 -2134 1184 0 c1114 0 1183 1 1177 17 -8 21 -3045 5275 -3054 5285 -4 3
+-404 -222 -889 -500z"/>
+<path d="M4240 5714 c-481 -279 -876 -507 -878 -508 -1 -2 313 -547 698 -1211
+l700 -1209 0 -253 0 -253 255 0 255 0 0 250 0 250 924 2 925 3 -990 1715
+c-544 943 -995 1716 -1002 1717 -6 1 -406 -225 -887 -503z"/>
+<path d="M2175 3900 c-484 -280 -881 -515 -882 -522 -1 -7 73 -143 165 -303
+l167 -290 1183 -3 c650 -1 1182 -1 1182 1 0 2 -206 361 -458 798 -252 437
+-463 802 -468 811 -8 15 -127 -52 -889 -492z"/>
+<path d="M4010 2355 c0 -234 -2 -425 -4 -425 -2 0 -29 16 -61 35 -185 111
+-430 162 -655 136 -261 -31 -475 -135 -650 -318 -137 -142 -218 -285 -267
+-471 -22 -83 -26 -119 -26 -247 -1 -165 11 -234 63 -375 93 -257 300 -478 556
+-596 189 -88 439 -117 642 -75 116 24 223 64 330 122 l72 40 0 -66 0 -65 250
+0 250 0 0 1365 0 1365 -250 0 -250 0 0 -425z m-406 -743 c176 -64 321 -215
+377 -392 27 -86 30 -222 5 -305 -56 -189 -199 -342 -379 -405 -87 -31 -240
+-38 -327 -15 -162 42 -289 137 -375 281 -53 88 -75 170 -75 278 0 171 50 289
+174 411 84 83 146 121 251 155 84 28 263 23 349 -8z"/>
+<path d="M7130 2356 l0 -425 -67 40 c-232 135 -536 172 -818 99 -113 -29 -284
+-117 -381 -194 -182 -146 -308 -344 -367 -576 -18 -70 -21 -113 -21 -245 1
+-140 4 -172 27 -257 111 -416 457 -727 876 -789 120 -17 302 -7 423 25 97 25
+242 86 298 126 l30 21 0 -65 0 -66 250 0 250 0 0 1365 0 1365 -250 0 -250 0 0
+-424z m-445 -731 c258 -68 445 -305 445 -563 0 -163 -51 -285 -169 -403 -236
+-237 -588 -241 -822 -9 -154 154 -210 344 -159 544 28 112 73 190 160 276 78
+79 162 129 256 155 68 18 217 18 289 0z"/>
+<path d="M960 2104 c-114 -17 -177 -31 -250 -56 -446 -155 -734 -582 -707
+-1048 27 -461 346 -846 805 -972 65 -18 105 -21 252 -22 158 0 185 3 275 27
+62 16 145 49 218 86 l117 59 0 -64 0 -64 245 0 245 0 0 1020 0 1020 -245 0
+-245 0 0 -80 c0 -44 -3 -80 -6 -80 -3 0 -19 9 -35 21 -52 36 -192 97 -274 118
+-132 34 -300 48 -395 35z m260 -479 c202 -54 364 -214 426 -421 28 -91 23
+-229 -10 -324 -82 -238 -309 -400 -559 -400 -163 0 -290 54 -413 175 -123 121
+-174 240 -174 407 0 253 186 494 436 563 66 18 226 18 294 0z"/>
+<path d="M8723 2100 c-285 -40 -541 -191 -715 -420 -68 -89 -143 -246 -174
+-365 -22 -84 -27 -123 -28 -245 -1 -152 8 -211 50 -340 103 -317 359 -572 679
+-679 125 -41 234 -55 379 -48 182 9 336 54 481 140 l60 35 3 -64 3 -64 249 0
+250 0 0 1020 0 1020 -250 0 -249 0 -3 -79 -3 -79 -65 39 c-78 47 -199 92 -305
+114 -95 19 -277 27 -362 15z m287 -471 c150 -34 313 -166 383 -309 116 -236
+74 -486 -112 -670 -116 -115 -245 -170 -398 -170 -101 0 -165 15 -263 63 -250
+122 -383 413 -305 670 59 196 225 360 418 412 62 16 213 19 277 4z"/>
+<path d="M10895 2099 c-228 -27 -444 -133 -556 -272 -50 -62 -102 -171 -118
+-245 -14 -68 -14 -186 0 -254 30 -145 141 -296 266 -361 122 -63 249 -96 574
+-151 234 -40 301 -61 348 -110 95 -98 17 -256 -152 -308 -58 -17 -86 -20 -175
+-15 -227 11 -358 105 -387 280 l-6 37 -265 0 -265 0 6 -58 c10 -88 57 -212
+109 -290 151 -228 438 -352 816 -352 466 0 779 170 875 473 115 363 -60 657
+-459 772 -49 14 -191 43 -315 65 -239 41 -329 66 -392 106 -89 56 -93 167 -9
+238 88 73 366 87 489 24 75 -39 101 -83 126 -210 l5 -28 256 0 255 0 -6 48
+c-18 121 -82 260 -164 353 -175 199 -508 299 -856 258z"/>
+<path d="M4760 1070 l0 -1020 255 0 255 0 -2 1018 -3 1017 -252 3 -253 2 0
+-1020z"/>
+</g>
+</svg>
+
+      </div>
+      <div class="partner">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="100px" height="100px" viewBox="0 0 1200.000000 809.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,809.000000) scale(0.100000,-0.100000)"
+fill="#5f5f5f" stroke="none">
+<path d="M6273 7582 c-597 -343 -881 -511 -878 -520 3 -8 557 -974 1232 -2148
+l1228 -2134 1184 0 c1114 0 1183 1 1177 17 -8 21 -3045 5275 -3054 5285 -4 3
+-404 -222 -889 -500z"/>
+<path d="M4240 5714 c-481 -279 -876 -507 -878 -508 -1 -2 313 -547 698 -1211
+l700 -1209 0 -253 0 -253 255 0 255 0 0 250 0 250 924 2 925 3 -990 1715
+c-544 943 -995 1716 -1002 1717 -6 1 -406 -225 -887 -503z"/>
+<path d="M2175 3900 c-484 -280 -881 -515 -882 -522 -1 -7 73 -143 165 -303
+l167 -290 1183 -3 c650 -1 1182 -1 1182 1 0 2 -206 361 -458 798 -252 437
+-463 802 -468 811 -8 15 -127 -52 -889 -492z"/>
+<path d="M4010 2355 c0 -234 -2 -425 -4 -425 -2 0 -29 16 -61 35 -185 111
+-430 162 -655 136 -261 -31 -475 -135 -650 -318 -137 -142 -218 -285 -267
+-471 -22 -83 -26 -119 -26 -247 -1 -165 11 -234 63 -375 93 -257 300 -478 556
+-596 189 -88 439 -117 642 -75 116 24 223 64 330 122 l72 40 0 -66 0 -65 250
+0 250 0 0 1365 0 1365 -250 0 -250 0 0 -425z m-406 -743 c176 -64 321 -215
+377 -392 27 -86 30 -222 5 -305 -56 -189 -199 -342 -379 -405 -87 -31 -240
+-38 -327 -15 -162 42 -289 137 -375 281 -53 88 -75 170 -75 278 0 171 50 289
+174 411 84 83 146 121 251 155 84 28 263 23 349 -8z"/>
+<path d="M7130 2356 l0 -425 -67 40 c-232 135 -536 172 -818 99 -113 -29 -284
+-117 -381 -194 -182 -146 -308 -344 -367 -576 -18 -70 -21 -113 -21 -245 1
+-140 4 -172 27 -257 111 -416 457 -727 876 -789 120 -17 302 -7 423 25 97 25
+242 86 298 126 l30 21 0 -65 0 -66 250 0 250 0 0 1365 0 1365 -250 0 -250 0 0
+-424z m-445 -731 c258 -68 445 -305 445 -563 0 -163 -51 -285 -169 -403 -236
+-237 -588 -241 -822 -9 -154 154 -210 344 -159 544 28 112 73 190 160 276 78
+79 162 129 256 155 68 18 217 18 289 0z"/>
+<path d="M960 2104 c-114 -17 -177 -31 -250 -56 -446 -155 -734 -582 -707
+-1048 27 -461 346 -846 805 -972 65 -18 105 -21 252 -22 158 0 185 3 275 27
+62 16 145 49 218 86 l117 59 0 -64 0 -64 245 0 245 0 0 1020 0 1020 -245 0
+-245 0 0 -80 c0 -44 -3 -80 -6 -80 -3 0 -19 9 -35 21 -52 36 -192 97 -274 118
+-132 34 -300 48 -395 35z m260 -479 c202 -54 364 -214 426 -421 28 -91 23
+-229 -10 -324 -82 -238 -309 -400 -559 -400 -163 0 -290 54 -413 175 -123 121
+-174 240 -174 407 0 253 186 494 436 563 66 18 226 18 294 0z"/>
+<path d="M8723 2100 c-285 -40 -541 -191 -715 -420 -68 -89 -143 -246 -174
+-365 -22 -84 -27 -123 -28 -245 -1 -152 8 -211 50 -340 103 -317 359 -572 679
+-679 125 -41 234 -55 379 -48 182 9 336 54 481 140 l60 35 3 -64 3 -64 249 0
+250 0 0 1020 0 1020 -250 0 -249 0 -3 -79 -3 -79 -65 39 c-78 47 -199 92 -305
+114 -95 19 -277 27 -362 15z m287 -471 c150 -34 313 -166 383 -309 116 -236
+74 -486 -112 -670 -116 -115 -245 -170 -398 -170 -101 0 -165 15 -263 63 -250
+122 -383 413 -305 670 59 196 225 360 418 412 62 16 213 19 277 4z"/>
+<path d="M10895 2099 c-228 -27 -444 -133 -556 -272 -50 -62 -102 -171 -118
+-245 -14 -68 -14 -186 0 -254 30 -145 141 -296 266 -361 122 -63 249 -96 574
+-151 234 -40 301 -61 348 -110 95 -98 17 -256 -152 -308 -58 -17 -86 -20 -175
+-15 -227 11 -358 105 -387 280 l-6 37 -265 0 -265 0 6 -58 c10 -88 57 -212
+109 -290 151 -228 438 -352 816 -352 466 0 779 170 875 473 115 363 -60 657
+-459 772 -49 14 -191 43 -315 65 -239 41 -329 66 -392 106 -89 56 -93 167 -9
+238 88 73 366 87 489 24 75 -39 101 -83 126 -210 l5 -28 256 0 255 0 -6 48
+c-18 121 -82 260 -164 353 -175 199 -508 299 -856 258z"/>
+<path d="M4760 1070 l0 -1020 255 0 255 0 -2 1018 -3 1017 -252 3 -253 2 0
+-1020z"/>
+</g>
+</svg>
+
+      </div>
+      <div class="partner">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="100px" height="100px" viewBox="0 0 1200.000000 809.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,809.000000) scale(0.100000,-0.100000)"
+fill="#5f5f5f" stroke="none">
+<path d="M6273 7582 c-597 -343 -881 -511 -878 -520 3 -8 557 -974 1232 -2148
+l1228 -2134 1184 0 c1114 0 1183 1 1177 17 -8 21 -3045 5275 -3054 5285 -4 3
+-404 -222 -889 -500z"/>
+<path d="M4240 5714 c-481 -279 -876 -507 -878 -508 -1 -2 313 -547 698 -1211
+l700 -1209 0 -253 0 -253 255 0 255 0 0 250 0 250 924 2 925 3 -990 1715
+c-544 943 -995 1716 -1002 1717 -6 1 -406 -225 -887 -503z"/>
+<path d="M2175 3900 c-484 -280 -881 -515 -882 -522 -1 -7 73 -143 165 -303
+l167 -290 1183 -3 c650 -1 1182 -1 1182 1 0 2 -206 361 -458 798 -252 437
+-463 802 -468 811 -8 15 -127 -52 -889 -492z"/>
+<path d="M4010 2355 c0 -234 -2 -425 -4 -425 -2 0 -29 16 -61 35 -185 111
+-430 162 -655 136 -261 -31 -475 -135 -650 -318 -137 -142 -218 -285 -267
+-471 -22 -83 -26 -119 -26 -247 -1 -165 11 -234 63 -375 93 -257 300 -478 556
+-596 189 -88 439 -117 642 -75 116 24 223 64 330 122 l72 40 0 -66 0 -65 250
+0 250 0 0 1365 0 1365 -250 0 -250 0 0 -425z m-406 -743 c176 -64 321 -215
+377 -392 27 -86 30 -222 5 -305 -56 -189 -199 -342 -379 -405 -87 -31 -240
+-38 -327 -15 -162 42 -289 137 -375 281 -53 88 -75 170 -75 278 0 171 50 289
+174 411 84 83 146 121 251 155 84 28 263 23 349 -8z"/>
+<path d="M7130 2356 l0 -425 -67 40 c-232 135 -536 172 -818 99 -113 -29 -284
+-117 -381 -194 -182 -146 -308 -344 -367 -576 -18 -70 -21 -113 -21 -245 1
+-140 4 -172 27 -257 111 -416 457 -727 876 -789 120 -17 302 -7 423 25 97 25
+242 86 298 126 l30 21 0 -65 0 -66 250 0 250 0 0 1365 0 1365 -250 0 -250 0 0
+-424z m-445 -731 c258 -68 445 -305 445 -563 0 -163 -51 -285 -169 -403 -236
+-237 -588 -241 -822 -9 -154 154 -210 344 -159 544 28 112 73 190 160 276 78
+79 162 129 256 155 68 18 217 18 289 0z"/>
+<path d="M960 2104 c-114 -17 -177 -31 -250 -56 -446 -155 -734 -582 -707
+-1048 27 -461 346 -846 805 -972 65 -18 105 -21 252 -22 158 0 185 3 275 27
+62 16 145 49 218 86 l117 59 0 -64 0 -64 245 0 245 0 0 1020 0 1020 -245 0
+-245 0 0 -80 c0 -44 -3 -80 -6 -80 -3 0 -19 9 -35 21 -52 36 -192 97 -274 118
+-132 34 -300 48 -395 35z m260 -479 c202 -54 364 -214 426 -421 28 -91 23
+-229 -10 -324 -82 -238 -309 -400 -559 -400 -163 0 -290 54 -413 175 -123 121
+-174 240 -174 407 0 253 186 494 436 563 66 18 226 18 294 0z"/>
+<path d="M8723 2100 c-285 -40 -541 -191 -715 -420 -68 -89 -143 -246 -174
+-365 -22 -84 -27 -123 -28 -245 -1 -152 8 -211 50 -340 103 -317 359 -572 679
+-679 125 -41 234 -55 379 -48 182 9 336 54 481 140 l60 35 3 -64 3 -64 249 0
+250 0 0 1020 0 1020 -250 0 -249 0 -3 -79 -3 -79 -65 39 c-78 47 -199 92 -305
+114 -95 19 -277 27 -362 15z m287 -471 c150 -34 313 -166 383 -309 116 -236
+74 -486 -112 -670 -116 -115 -245 -170 -398 -170 -101 0 -165 15 -263 63 -250
+122 -383 413 -305 670 59 196 225 360 418 412 62 16 213 19 277 4z"/>
+<path d="M10895 2099 c-228 -27 -444 -133 -556 -272 -50 -62 -102 -171 -118
+-245 -14 -68 -14 -186 0 -254 30 -145 141 -296 266 -361 122 -63 249 -96 574
+-151 234 -40 301 -61 348 -110 95 -98 17 -256 -152 -308 -58 -17 -86 -20 -175
+-15 -227 11 -358 105 -387 280 l-6 37 -265 0 -265 0 6 -58 c10 -88 57 -212
+109 -290 151 -228 438 -352 816 -352 466 0 779 170 875 473 115 363 -60 657
+-459 772 -49 14 -191 43 -315 65 -239 41 -329 66 -392 106 -89 56 -93 167 -9
+238 88 73 366 87 489 24 75 -39 101 -83 126 -210 l5 -28 256 0 255 0 -6 48
+c-18 121 -82 260 -164 353 -175 199 -508 299 -856 258z"/>
+<path d="M4760 1070 l0 -1020 255 0 255 0 -2 1018 -3 1017 -252 3 -253 2 0
+-1020z"/>
+</g>
+</svg>
+
+      </div>
+      <div class="partner">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="100px" height="100px" viewBox="0 0 1200.000000 809.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,809.000000) scale(0.100000,-0.100000)"
+fill="#5f5f5f" stroke="none">
+<path d="M6273 7582 c-597 -343 -881 -511 -878 -520 3 -8 557 -974 1232 -2148
+l1228 -2134 1184 0 c1114 0 1183 1 1177 17 -8 21 -3045 5275 -3054 5285 -4 3
+-404 -222 -889 -500z"/>
+<path d="M4240 5714 c-481 -279 -876 -507 -878 -508 -1 -2 313 -547 698 -1211
+l700 -1209 0 -253 0 -253 255 0 255 0 0 250 0 250 924 2 925 3 -990 1715
+c-544 943 -995 1716 -1002 1717 -6 1 -406 -225 -887 -503z"/>
+<path d="M2175 3900 c-484 -280 -881 -515 -882 -522 -1 -7 73 -143 165 -303
+l167 -290 1183 -3 c650 -1 1182 -1 1182 1 0 2 -206 361 -458 798 -252 437
+-463 802 -468 811 -8 15 -127 -52 -889 -492z"/>
+<path d="M4010 2355 c0 -234 -2 -425 -4 -425 -2 0 -29 16 -61 35 -185 111
+-430 162 -655 136 -261 -31 -475 -135 -650 -318 -137 -142 -218 -285 -267
+-471 -22 -83 -26 -119 -26 -247 -1 -165 11 -234 63 -375 93 -257 300 -478 556
+-596 189 -88 439 -117 642 -75 116 24 223 64 330 122 l72 40 0 -66 0 -65 250
+0 250 0 0 1365 0 1365 -250 0 -250 0 0 -425z m-406 -743 c176 -64 321 -215
+377 -392 27 -86 30 -222 5 -305 -56 -189 -199 -342 -379 -405 -87 -31 -240
+-38 -327 -15 -162 42 -289 137 -375 281 -53 88 -75 170 -75 278 0 171 50 289
+174 411 84 83 146 121 251 155 84 28 263 23 349 -8z"/>
+<path d="M7130 2356 l0 -425 -67 40 c-232 135 -536 172 -818 99 -113 -29 -284
+-117 -381 -194 -182 -146 -308 -344 -367 -576 -18 -70 -21 -113 -21 -245 1
+-140 4 -172 27 -257 111 -416 457 -727 876 -789 120 -17 302 -7 423 25 97 25
+242 86 298 126 l30 21 0 -65 0 -66 250 0 250 0 0 1365 0 1365 -250 0 -250 0 0
+-424z m-445 -731 c258 -68 445 -305 445 -563 0 -163 -51 -285 -169 -403 -236
+-237 -588 -241 -822 -9 -154 154 -210 344 -159 544 28 112 73 190 160 276 78
+79 162 129 256 155 68 18 217 18 289 0z"/>
+<path d="M960 2104 c-114 -17 -177 -31 -250 -56 -446 -155 -734 -582 -707
+-1048 27 -461 346 -846 805 -972 65 -18 105 -21 252 -22 158 0 185 3 275 27
+62 16 145 49 218 86 l117 59 0 -64 0 -64 245 0 245 0 0 1020 0 1020 -245 0
+-245 0 0 -80 c0 -44 -3 -80 -6 -80 -3 0 -19 9 -35 21 -52 36 -192 97 -274 118
+-132 34 -300 48 -395 35z m260 -479 c202 -54 364 -214 426 -421 28 -91 23
+-229 -10 -324 -82 -238 -309 -400 -559 -400 -163 0 -290 54 -413 175 -123 121
+-174 240 -174 407 0 253 186 494 436 563 66 18 226 18 294 0z"/>
+<path d="M8723 2100 c-285 -40 -541 -191 -715 -420 -68 -89 -143 -246 -174
+-365 -22 -84 -27 -123 -28 -245 -1 -152 8 -211 50 -340 103 -317 359 -572 679
+-679 125 -41 234 -55 379 -48 182 9 336 54 481 140 l60 35 3 -64 3 -64 249 0
+250 0 0 1020 0 1020 -250 0 -249 0 -3 -79 -3 -79 -65 39 c-78 47 -199 92 -305
+114 -95 19 -277 27 -362 15z m287 -471 c150 -34 313 -166 383 -309 116 -236
+74 -486 -112 -670 -116 -115 -245 -170 -398 -170 -101 0 -165 15 -263 63 -250
+122 -383 413 -305 670 59 196 225 360 418 412 62 16 213 19 277 4z"/>
+<path d="M10895 2099 c-228 -27 -444 -133 -556 -272 -50 -62 -102 -171 -118
+-245 -14 -68 -14 -186 0 -254 30 -145 141 -296 266 -361 122 -63 249 -96 574
+-151 234 -40 301 -61 348 -110 95 -98 17 -256 -152 -308 -58 -17 -86 -20 -175
+-15 -227 11 -358 105 -387 280 l-6 37 -265 0 -265 0 6 -58 c10 -88 57 -212
+109 -290 151 -228 438 -352 816 -352 466 0 779 170 875 473 115 363 -60 657
+-459 772 -49 14 -191 43 -315 65 -239 41 -329 66 -392 106 -89 56 -93 167 -9
+238 88 73 366 87 489 24 75 -39 101 -83 126 -210 l5 -28 256 0 255 0 -6 48
+c-18 121 -82 260 -164 353 -175 199 -508 299 -856 258z"/>
+<path d="M4760 1070 l0 -1020 255 0 255 0 -2 1018 -3 1017 -252 3 -253 2 0
+-1020z"/>
+</g>
+</svg>
+
+      </div>
+    </div>
+
+    <!-- _________BLOGS-END_________ -->
+
+    <!-- </div> -->
+
+
+{% endblock %}

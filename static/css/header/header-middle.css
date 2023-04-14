@@ -3,6 +3,11 @@
   padding-bottom: 15px;
 }
 
+.logo a img {
+  width: 90px;
+  height: 90px;
+}
+
 .email {
   display: flex;
   flex-direction: column;
@@ -50,6 +55,8 @@
 .cart-box-wrapper {
   display: flex;
   flex-direction: column;
+
+  color: #fff;
 }
 
 .cart-info {

@@ -1,7 +1,7 @@
 header {
   width: 100%;
   height: auto;
-  background-color: orange;
+  background-color: #ADBCC1;
   display: block;
 
   margin-bottom: 25px;
@@ -9,6 +9,10 @@ header {
 
 header a {
   color: #fbf5f5;
+}
+
+.cart {
+  color: white;
 }
 
 /* .header-middle-area {

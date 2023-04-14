@@ -3,4 +3,9 @@ from django.shortcuts import render
 from django.conf import settings
 
 def home(request):
-    return render(request, "index.html",)
+    return render(request, "main.html",)
+
+
+def products(requset):
+    return render(requset, "products.html")
+
