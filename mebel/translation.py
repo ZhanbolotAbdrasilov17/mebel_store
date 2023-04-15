@@ -5,6 +5,10 @@ from .models import *
 class FurnitureTranslation(TranslationOptions):
     fields = ('title',)
 
+@register(FurnitureCategory)
+class FurnitureCategoryTranslation(TranslationOptions):
+    fields = ('title',)
+
 @register(Partner)
 class PartnerTranslation(TranslationOptions):
     fields = ('title',)

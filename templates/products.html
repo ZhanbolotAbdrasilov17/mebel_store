@@ -111,82 +111,15 @@
             </div>
 
             <div class="shop-itemS">
-
+                {% for p in product %}
                 <div class="shop-item">
-                    <div class="shop-item-photo"></div>
-                    <div class="shop-item-name">Joust Duffle Bag</div>
-                    <div class="shop-item-price">$34.00</div>
+                    <img data-src="{{p.image.url}}" width="300px" height="300px" alt="">
+                      <div class="shop-item-name">
+                                        <h3><a href="{% url 'products' p.pk %}">{{ p.title}}</a></h3>
+                                    </div>
+                    <div class="shop-item-price">{{ p.price }}</div>
                 </div>
-
-                <div class="shop-item">
-                    <div class="shop-item-photo"></div>
-                    <div class="shop-item-name">Strive Shoulder Pack</div>
-                    <div class="shop-item-price">$34.00</div>
-                </div>
-
-                <div class="shop-item">
-                    <div class="shop-item-photo"></div>
-                    <div class="shop-item-name">Strive Shoulder Pack</div>
-                    <div class="shop-item-price">$34.00</div>
-                </div>
-
-                <div class="shop-item">
-                    <div class="shop-item-photo"></div>
-                    <div class="shop-item-name">Strive Shoulder Pack</div>
-                    <div class="shop-item-price">$34.00</div>
-                </div>
-
-                <!-- --------------------------------------------------------------- -->
-
-                <div class="shop-item">
-                    <div class="shop-item-photo"></div>
-                    <div class="shop-item-name">Strive Shoulder Pack</div>
-                    <div class="shop-item-price">$34.00</div>
-                </div>
-
-                <div class="shop-item">
-                    <div class="shop-item-photo"></div>
-                    <div class="shop-item-name">Strive Shoulder Pack</div>
-                    <div class="shop-item-price">$34.00</div>
-                </div>
-
-                <div class="shop-item">
-                    <div class="shop-item-photo"></div>
-                    <div class="shop-item-name">Strive Shoulder Pack</div>
-                    <div class="shop-item-price">$34.00</div>
-                </div>
-
-                <div class="shop-item">
-                    <div class="shop-item-photo"></div>
-                    <div class="shop-item-name">Strive Shoulder Pack</div>
-                    <div class="shop-item-price">$34.00</div>
-                </div>
-
-                <!-- --------------------------------------------------------------- -->
-
-                <div class="shop-item">
-                    <div class="shop-item-photo"></div>
-                    <div class="shop-item-name">Strive Shoulder Pack</div>
-                    <div class="shop-item-price">$34.00</div>
-                </div>
-
-                <div class="shop-item">
-                    <div class="shop-item-photo"></div>
-                    <div class="shop-item-name">Strive Shoulder Pack</div>
-                    <div class="shop-item-price">$34.00</div>
-                </div>
-
-                <div class="shop-item">
-                    <div class="shop-item-photo"></div>
-                    <div class="shop-item-name">Strive Shoulder Pack</div>
-                    <div class="shop-item-price">$34.00</div>
-                </div>
-
-                <div class="shop-item">
-                    <div class="shop-item-photo"></div>
-                    <div class="shop-item-name">Strive Shoulder Pack</div>
-                    <div class="shop-item-price">$34.00</div>
-                </div>
+                {% endfor %}
 
 
 

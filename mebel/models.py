@@ -17,7 +17,6 @@ class Furniture(models.Model):
     category = models.ForeignKey(FurnitureCategory, on_delete=models.CASCADE, verbose_name='Категория мебели',
                                  related_name='category_furniture')
     title = models.CharField(max_length=200, verbose_name='Название мебели')
-    # text = RichTextField(verbose_name='Текст', blank=True, null=True, )
     image = models.ImageField(upload_to='partner-image', blank=True, null=True, verbose_name='Картинка мебели')
     price = models.CharField(max_length=200, verbose_name='Цена')
 
@@ -28,6 +27,14 @@ class Furniture(models.Model):
         verbose_name_plural = 'Мебель'
         verbose_name = 'Мебель'
 
+
+class FurnitureFullDescription(models.Model):
+    furniture = models.ForeignKey(Furniture, on_delete=models.CASCADE, related_name="furniture_descriptions")
+    text = models.TextField(verbose_name="Текст")
+
+    class Meta:
+        verbose_name = 'Описание мебели'
+        ordering = ['text']
 
 class Partner(models.Model):
     title = models.CharField(max_length=200, verbose_name='Название партнёра')
