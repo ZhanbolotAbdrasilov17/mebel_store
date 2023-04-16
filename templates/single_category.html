@@ -10,9 +10,10 @@
             <!-- --------------------------------------------------------------- -->
             <div class="sidebar">
                 <h1>SHOP BY</h1>
-                {% for category in categories %}
-                <div class="filter" data-id="{{category.id}}">
-                    <h1>{{category.title}}</h1>
+                {% for c in categories %}
+                <div class="filter" data-id="{{c.id}}">
+                    <h1>{{c.title}}</h1>
+
 
                 </div>
 
@@ -45,7 +46,7 @@
             </div>
 
             <div class="shop-itemS">
-                {% for p in all_products %}
+                {% for p in category.category_furniture.all %}
                 <div class="shop-item">
                     <img data-src="{{p.image.url}}" width="300px" height="300px" alt="">
                       <div class="shop-item-name">

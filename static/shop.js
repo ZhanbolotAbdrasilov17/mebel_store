@@ -15,19 +15,29 @@ let counter = 0
 
 for (let i = 0; i < allFilter.length; i++) {
     allFilter[i].addEventListener('click', () => {
-        counters[i]++
-        console.log(counter)
-        if (counters[i] % 2 === 0) {
-            // allFilter[0].style.borderBottom = ''
-            arrows[i].style.transform = 'rotate(-45deg)'
-            barsScrapper[i].style.display = 'none'
-        }
-        if (counters[i] % 2) {
-            // allFilter[0].style.borderBottom = '1px solid #e5e5e5'
-            arrows[i].style.transform = 'rotate(135deg)'
-            barsScrapper[i].style.display = 'flex'
-    
-        }
+        const id_product = allFilter[i].dataset.id
+        const isKyrgyz = window.location.href.includes('/ky/')
+        const isRussian = window.location.href.includes('/ru/')
+        const lang = isKyrgyz ? 'ky/' : isRussian ? 'ru/' : ''
+
+        const product_href = `${window.location.origin}/${lang}category/${id_product}`
+
+        window.location.href = product_href
+
+//console.log(window.location.href, id_product, product_href)
+//        counters[i]++
+//        console.log(counter)
+//        if (counters[i] % 2 === 0) {
+//            // allFilter[0].style.borderBottom = ''
+//            arrows[i].style.transform = 'rotate(-45deg)'
+//            barsScrapper[i].style.display = 'none'
+//        }
+//        if (counters[i] % 2) {
+//            // allFilter[0].style.borderBottom = '1px solid #e5e5e5'
+//            arrows[i].style.transform = 'rotate(135deg)'
+//            barsScrapper[i].style.display = 'flex'
+//
+//        }
     })
 }
 

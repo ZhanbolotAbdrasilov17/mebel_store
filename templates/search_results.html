@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load i18n%}
+{% block page %}
+    <h1>Search Results</h1>
+
+<ul>
+  {% for furniture in object_list %}
+    <li>
+
+      {{ furniture.title }}
+
+    </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}

@@ -85,8 +85,8 @@
               </div>
             </div>
             <div class="search-card">
-              <form action="#" class="header-search">
-                <input type="text" placeholder="Search for items..." />
+              <form action="{% url 'search_results' %}" method="get" class="header-search">
+                <input type="text" name="q" placeholder="Search for items..." />
                 <button>
                   <a href="#"
                     ><i class="material-symbols-outlined">search</i></a
@@ -211,9 +211,10 @@
       </div>
     </div>
 
-    <script type="javascript" src="{% static 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js' %}"></script>
-    <script type="javascript" src="{% static 'burger.js' %}"></script>
-    <script type="javascript" src="{% static 'slick.min.js' %}"></script>
-    <script type="javascript" src="{% static 'slider.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="{% static 'burger.js' %}"></script>
+    <script src="{% static 'slick.min.js' %}"></script>
+    <script src="{% static 'slider.js' %}"></script>
+    <script src="{% static 'shop.js' %}"></script>
   </body>
 </html>
