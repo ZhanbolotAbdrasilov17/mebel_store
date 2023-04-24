@@ -1,12 +1,16 @@
+from django.contrib import messages
+from django.core.mail import send_mail
 from django.db.models import Q
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
+from django.urls import reverse_lazy
+from django.views import View
 from django.views.generic import DetailView, ListView
 from django.utils.translation import activate, get_language
 
 from django.conf import settings
 
-
+from .forms import MailForm
 from .models import *
 
 
@@ -77,4 +81,30 @@ class SearchResultsView(ListView):
             Q(title__icontains=query) | Q(category__title__icontains=query)
         )
         return object_list
+
+
+
+
+class MailCreateView(View):
+    @staticmethod
+    def post(request, *args, **kwargs):
+        form = MailForm(request.POST)
+
+        if form.is_valid():
+            form.save()
+            last_sender = Email.objects.last()
+            message = f'Почта: {last_sender.address}\n'
+
+            send_mail(
+                'Почта клиента или партнера',
+                message,
+                'oriyental.treyd@mail.ru',
+                ['itpythonzhanbolot@gmail.com'],
+                fail_silently=False,
+            )
+
+            messages.add_message(request, messages.SUCCESS, 'Письмо отправлено!')
+            return HttpResponseRedirect(redirect_to=reverse_lazy('home'))
+
+        messages.add_message(request, messages.ERROR, 'Ошибка отправки данных.')
 

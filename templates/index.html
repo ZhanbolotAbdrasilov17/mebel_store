@@ -32,22 +32,7 @@
               >
             </div>
             <div class="utils">
-              <ul>
-                <li>
-                  <a href="#">KGZ сом</a>
-                  <ul>
-                    <li><a href="#">US dollar</a></li>
-                    <li><a href="#">RU рубль</a></li>
-                    <li><a href="#">EU euro</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-          <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+              <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
                                     <input name="next" type="hidden" value="{{ redirect_to }}">
                                     <select name="language" onchange="this.form.submit()">
                                         {% get_current_language as LANGUAGE_CODE %}
@@ -63,6 +48,12 @@
                                     </select>
                                     <!--									<input type="submit" value="ОК">-->
                                 </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="line-header"></div>
 
       <div class="header-middle-area">
@@ -94,13 +85,6 @@
                 </button>
               </form>
 
-              <div class="cart-box-wrapper">
-                <a href="#" class="cart-info">
-                  <i class="material-symbols-outlined">shopping_cart</i>
-                  <span>2</span>
-                </a>
-                <span class="cart">My cart</span>
-              </div>
 
               <div class="burger">
                 <div class="burger-line line1"></div>
@@ -188,12 +172,19 @@
             helped
           </div>
           <div class="send-container">
-            <input
+             <form action="{% url 'mail_create' %}" method="post"
+                                  id="form" novalidate="novalidate">
+               {% csrf_token %}
+
+            <input name="address"
               type="email"
               class="send-input"
-              placeholder="Enter your email adress"
+              placeholder="Enter your email address"
             />
-            <button class="send-btn">Send</button>
+                           <button type="submit" class="send-btn">Send</button>
+
+             </form>
+
           </div>
         </div>
       </div>

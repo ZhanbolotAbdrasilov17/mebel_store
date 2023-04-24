@@ -18,7 +18,7 @@
 .utils {
   width: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
 }
 

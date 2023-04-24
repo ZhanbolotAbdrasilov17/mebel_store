@@ -46,12 +46,17 @@
 
             <div class="shop-itemS">
                 {% for p in all_products %}
+
                 <div class="shop-item">
-                    <img data-src="{{p.image.url}}" width="300px" height="300px" alt="">
-                      <div class="shop-item-name">
-                                        <h3><a href="{% url 'products' p.pk %}">{{ p.title}}</a></h3>
-                                    </div>
-                    <div class="shop-item-price">{{ p.price }}</div>
+                    <div class="shop-photo-scrapper">
+                        <a href="./shop.html">
+                            <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/widget/1.jpg" alt="" class="shop-photo">
+                        </a>
+
+                        <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/6.jpg" alt="" class="shop-photo-hover">
+                    </div>
+                    <div class="shop-item-name">Joust Duffle Bag</div>
+                    <div class="shop-item-price">$34.00</div>
                 </div>
                 {% endfor %}
 
