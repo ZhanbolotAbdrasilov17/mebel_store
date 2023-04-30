@@ -1,7 +1,12 @@
+@import url(./header/header-middle.css);
+@import url(./header/header-top.css);
+@import url(./header/header-bottom.css);
+@import url(./header/burger-nav.css);
+
 header {
   width: 100%;
   height: auto;
-  background-color: #c0ccd4;
+  background-color: #ADBCC1;
   display: block;
 
   margin-bottom: 25px;
@@ -14,7 +19,3 @@ header a {
 .cart {
   color: white;
 }
-
-/* .header-middle-area {
-  width: 100%;
-} */

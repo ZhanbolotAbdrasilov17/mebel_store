@@ -3,10 +3,14 @@ from .models import *
 from modeltranslation.admin import TranslationAdmin
 # Register your models here.
 
+admin.site.register(DescriptionImage)
+admin.site.register(ItemsFurniture)
+
 
 @admin.register(FurnitureCategory)
 class FurnitureCategoryAdminList(admin.ModelAdmin):
     pass
+
 
 @admin.register(Furniture)
 class FurnitureAdminList(admin.ModelAdmin):

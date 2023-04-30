@@ -15,7 +15,25 @@ from .models import *
 
 
 def home(request):
-    return render(request, "main.html",)
+    image_up_1 = DescriptionImage.objects.get(id=2)
+    image_up_2 = DescriptionImage.objects.get(id=3)
+    image_up_3 = DescriptionImage.objects.get(id=4)
+
+    category_image_furniture_1 = ItemsFurniture.objects.get(id=1)
+    category_image_furniture_2 = ItemsFurniture.objects.get(id=2)
+    category_image_furniture_3 = ItemsFurniture.objects.get(id=3)
+    category_image_furniture_4 = ItemsFurniture.objects.get(id=4)
+    category_image_furniture_5 = ItemsFurniture.objects.get(id=5)
+    category_image_furniture_6 = ItemsFurniture.objects.get(id=6)
+
+
+
+
+    context = {"image_up_1": image_up_1, "image_up_2": image_up_2, "image_up_3": image_up_3,
+               "cif1":category_image_furniture_1, "cif2":category_image_furniture_2, "cif3":category_image_furniture_3,
+               "cif4":category_image_furniture_4, "cif5":category_image_furniture_5, "cif6":category_image_furniture_6
+               }
+    return render(request, "main.html", context)
 
 
 def products(requset):

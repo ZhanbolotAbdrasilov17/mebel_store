@@ -6,7 +6,6 @@
 .main-menu {
   width: 100%;
   height: auto;
-  
 }
 
 nav {
@@ -28,8 +27,6 @@ nav {
 
 .main-menu nav ul li {
   margin: 18px 0;
-  /* border-right: 1px solid #fff;
-  border-left: 1px solid #fff; */
   position: relative;
   transition: all 1s ease;
 }
@@ -47,17 +44,11 @@ nav {
   right: -25px;
   bottom: 0px;
   left: -10px;
-  border-right: 1px solid #c6cfd2;
-  
+  border-right: 1px solid #c6cfd2; 
 }
-
 
 .main-menu nav li:last-child::after {
   display: none;
-}
-
-
-.main-menu nav ul ul {
 }
 
 .main-menu nav ul li ul {
@@ -73,7 +64,6 @@ nav {
 
 .main-menu nav ul li:hover ul {
   display: block;
-
 }
 
 .main-menu nav ul li ul li a {

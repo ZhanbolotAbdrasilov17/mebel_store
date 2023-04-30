@@ -1,0 +1,89 @@
+.burger {
+  width: 35px;
+  height: 35px;
+  display: none;
+}
+
+.burger-line {
+  height: 2.5px;
+  width: 100%;
+  background-color: #fff;
+  transition: transform 0.75s ease, opacity 0.75s ease;
+}
+
+.burger-nav {
+  position: fixed;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	padding: 15px;
+  background: #d3d3d3;
+	transform: translateX(-100%);
+	transition: transform 0.5s;
+  z-index: 10;
+}
+
+.burger-nav.show {
+	transform: translateX(0);
+}
+
+.burger-nav ul {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.burger-nav ul li {
+  border-bottom: 1px solid #575757;
+  padding: 15px 0 15px 10px;
+  position: relative;
+}
+
+.burger-nav ul li a {
+  color: rgb(255, 255, 255);
+}
+
+.burger-nav nav ul li ul {
+  min-width: 150px;
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 15px;
+  background-color: #fff;
+  z-index: 5;
+  transition: all 1s ease;
+}
+
+.burger-nav nav ul li:hover ul {
+  display: block;
+  height: auto;
+}
+
+.burger-nav nav ul li ul li a {
+  color: black;
+  font-weight: 400;
+}
+
+.search-card.show .line1 {
+  transform: translate(-10px) rotate(45deg) translate(17px);
+  width: 39px;
+}
+.search-card.show .line2 {
+  opacity: 0;
+}
+.search-card.show .line3 {
+  transform: translate(-9px) rotate(-45deg) translate(15px);
+  width: 39px;
+}
+.search-card.show .burger-nav {
+  display: block;
+}
+
+@media screen and (max-width: 950px) {
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

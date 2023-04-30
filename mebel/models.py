@@ -18,33 +18,29 @@ class Logo(models.Model):
 
 
 class DescriptionImage(models.Model):
-    image_1 = models.FileField(upload_to='desc_image', blank=True, null=True)
-    image_2 = models.FileField(upload_to='desc_image', blank=True, null=True)
-    image_3 = models.FileField(upload_to='desc_image', blank=True, null=True)
+    title = models.CharField(max_length=100, verbose_name='Название статистики', blank=True, null=True)
+    image = models.ImageField(upload_to='desc_image', blank=True, null=True, verbose_name='Картинка')
+
 
 
     def __str__(self):
-        return 'Коллекция'
+        return f'Коллекция {self.id}'
 
     class Meta:
-        verbose_name_plural = 'Коллекция'
-        verbose_name = 'Коллекция'
+        verbose_name_plural = 'Коллекция - картинки'
+        verbose_name = 'Коллекция - картинки'
 
 
 class ItemsFurniture(models.Model):
-    item_1 = models.FileField(upload_to='collection', blank=True, null=True)
-    item_2 = models.FileField(upload_to='collection', blank=True, null=True)
-    item_3 = models.FileField(upload_to='collection', blank=True, null=True)
-    item_4 = models.FileField(upload_to='collection', blank=True, null=True)
-    item_5 = models.FileField(upload_to='collection', blank=True, null=True)
-    item_6 = models.FileField(upload_to='collection', blank=True, null=True)
+    title = models.CharField(max_length=100, verbose_name='Название статистики', blank=True, null=True)
+    image = models.ImageField(upload_to='desc_image', blank=True, null=True, verbose_name='Картинка')
 
     def __str__(self):
-        return 'Коллекция'
+        return f'Коллекция {self.id}'
 
     class Meta:
-        verbose_name_plural = 'Коллекция'
-        verbose_name = 'Коллекция'
+        verbose_name_plural = 'Коллекция категорий'
+        verbose_name = 'Коллекция категорий'
 
 
 class FurnitureCategory(models.Model):

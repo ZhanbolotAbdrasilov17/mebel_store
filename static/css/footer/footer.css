@@ -137,7 +137,6 @@ footer {
 }
 
 .partner path{
-    
     transition: fill 0.45s;
 }
 
@@ -205,13 +204,15 @@ footer {
 .container-message {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 0 30px 0 30px;
     margin-top: 100px;
+    gap: 70px;
 }
 
 .message-block {
-    width: 30%;
+    width: 350px;
     height: 420px;
     background-color: lightgrey;
 
@@ -225,12 +226,11 @@ footer {
 }
 
 .message-photo {
-    width: 130px;
+    width: 140px;
     height: 130px;
-    /* background-color: YELLOW; */
-    background-image: url(https://kartinkin.net/pics/uploads/posts/2022-08/1660617551_30-kartinkin-net-p-raian-gosling-oboi-krasivo-34.jpg);
+    /* background-image: url(https://kartinkin.net/pics/uploads/posts/2022-08/1660617551_30-kartinkin-net-p-raian-gosling-oboi-krasivo-34.jpg); */
     margin-top: -60px;
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     border: 10px solid white;
