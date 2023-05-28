@@ -2,832 +2,727 @@
 {% load static %}
 {% load i18n%}
 {% block page %}
-
-
-    <div class="burger-nav">
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li>
-            <a href="#">Shop</a>
-            <ul>
-              <li>
-                <a href="./product-details.html">Product details</a>
-              </li>
-              <li><a href="#">Clothing</a></li>
-              <li><a href="#">Accessories</a></li>
-              <li><a href="#">Shoes</a></li>
-              <li><a href="#">Sale</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" id="slide1">
-          <h1 class="sliderTitle1">Collection</h1>
-          <h1 class="sliderTitle2">Lamps light Color</h1>
-          <p class="sliderDes">
-            Eikon is made of certified wood and a lampshade that is attached
-            simply with the help of magnets.
-          </p>
-          <button class="sliderButton">Shop now</button>
-        </div>
-        <div class="swiper-slide" id="slide2">
-          <h1  class="sliderTitle1">inimalist design</h1>
-          <h1  class="sliderTitle2">inimalist design</h1>
-          <p class="sliderDes">
-            Doko Demo is a minimalist design created by Copenhagen-based
-            designer CZYK
-          </p>
-          <button class="sliderButton">Shop now</button>
+   <!-- slider section -->
+    <section class="slider_section ">
+      <div class="play_btn">
+        <a href="">
+          <img src="{% static 'images/play.png' %}" alt="">
+        </a>
+      </div>
+      <div class="number_box">
+        <div>
+          <ol class="carousel-indicators indicator-2">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2">03</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3">04</li>
+          </ol>
         </div>
       </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- Add Navigation -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      The Latest
+                      <span>
+                        Furniture
+                      </span>
+                    </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="" class="btn-2">
+                        Contact us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 img-container">
+                  <div class="img-box">
+                    <img src="{% static 'images/slider-img.png' %}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      The Latest
+                      <span>
+                        Furniture
+                      </span>
+                    </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="" class="btn-2">
+                        Contact us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 img-container">
+                  <div class="img-box">
+                    <img src="{% static 'images/slider-img.png' %}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      The Latest
+                      <span>
+                        Furniture
+                      </span>
+                    </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="" class="btn-2">
+                        Contact us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 img-container">
+                  <div class="img-box">
+                    <img src="{% static 'images/slider-img.png' %}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      The Latest
+                      <span>
+                        Furniture
+                      </span>
+                    </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="" class="btn-2">
+                        Contact us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 img-container">
+                  <div class="img-box">
+                    <img src="{% static 'images/slider-img.png' %}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
 
-    <!-- Banner with 3 items start -->
-    <div class="banner">
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About Us
+              </h2>
+
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="{% static 'images/about-img.png' %}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- trending section -->
+
+  <section class="trending_section layout_padding">
+    <div id="accordion">
       <div class="container">
         <div class="row">
-          <div class="child hanging-light">
-            <a href="#"
-              ><img
-                src="{{ image_up_1.image.url }}"
-                alt="#"
-            /></a>
-          </div>
-          <div class="child minimal-chair">
-            <a href="#"
-              ><img
-                src="{{ image_up_2.image.url }}"
-                alt="#"
-            /></a>
-          </div>
-          <div class="child design-sofa">
-            <a href="#"
-              ><img
-                src="{{ image_up_3.image.url }}"
-                alt="#"
-            /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Banner with 3 items ends -->
-
-    <!-- ///////////////////////////////////////////////////////////////////////////////////////// -->
-
-    <div class="nightstands-wrapper">
-      <h4>NEW SHOP ITEM</h4>
-      <div class="nightstands-title">
-        <div class="line-night">
-          <h1>NIGHTSTANDS</h1>
-        </div>
-      </div>
-
-      <div class="furniture-wrapper">
-        <div class="furniture-card-wrapper">
-          <div class="furniture-card1">
-            <img
-              src="{{ cif1.image.url }}"
-              alt=""
-            />
-            <p>Chair collection</p>
-          </div>
-
-          <div class="furniture-card2">
-            <img
-              src="{{ cif2.image.url }}"
-              alt=""
-            />
-            <p>Chair collection</p>
-          </div>
-        </div>
-
-        <div class="furniture-card3">
-          <img
-            src="{{ cif3.image.url }}"
-            alt=""
-          />
-          <p>Chair collection</p>
-        </div>
-
-        <div class="furniture-card-wrapper">
-          <div class="furniture-card2">
-            <img
-              src="{{ cif4.image.url }}"
-              alt=""
-            />
-            <p>Chair collection</p>
-          </div>
-
-          <div class="furniture-card1">
-            <img
-              src="{{ cif5.image.url }}"
-              alt=""
-            />
-            <p>Chair collection</p>
-          </div>
-        </div>
-
-        <div class="furniture-card3">
-          <img
-            src="{{ cif6.image.url }}"
-            alt=""
-          />
-          <p>Chair collection</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="featured-wrapper">
-      <h4>FEATURED SHOP ITEMS</h4>
-      <div class="featured-title">
-        <div class="line-feature">
-          <h1>FEATURED PRODUCTS</h1>
-        </div>
-      </div>
-
-      <!-- <div class="featured-cards"> -->
-        <div class="featured-cards">
-          <div class="featured-card">
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/26.jpg" alt="" class="card-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/27.jpg" alt="" class="card-photo-hover">
-            </a>
-            <p class="card-name">Strive Shoulder Pack</p>
-            <p class="card-cost">$32.00</p>
-          </div>
-
-          <div class="featured-card">
-            <div class="card-status-sale">
-              <p>Sale</p>
-            </div>
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/30.jpg" alt="" class="card-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/31.jpg" alt="" class="card-photo-hover">
-            </a>
-            <p class="card-name">Strive Shoulder Pack</p>
-            <p class="card-cost">$76.00</p>
-          </div>
-
-          <div class="featured-card">
-            <div class="card-status-sale">
-              <p>Sale</p>
-            </div>
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/5.jpg" alt="" class="card-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/6.jpg" alt="" class="card-photo-hover">
-            </a>
-            <p class="card-name">Strive Shoulder Pack</p>
-            <p class="card-cost">$23.00</p>
-          </div>
-
-          <div class="featured-card">
-            <div class="card-status-new">
-              <p>New</p>
-            </div>
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/24.jpg" alt="" class="card-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/25.jpg" alt="" class="card-photo-hover">
-            </a>
-            <p class="card-name">Strive Shoulder Pack</p>
-            <p class="card-cost">$56.00</p>
-          </div>
-
-          <div class="featured-card">
-            <div class="card-status-new">
-              <p>New</p>
-            </div>
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/28.jpg" alt="" class="card-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/29.jpg" alt="" class="card-photo-hover">
-            </a>
-            <p class="card-name">Strive Shoulder Pack</p>
-            <p class="card-cost">$78.00</p>
-          </div>
-
-          <div class="featured-card">
-            <div class="card-status-sale">
-              <p>Sale</p>
-            </div>
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/13.jpg" alt="" class="card-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/14.jpg" alt="" class="card-photo-hover">
-            </a>
-            <p class="card-name">Strive Shoulder Pack</p>
-            <p class="card-cost">$78.00</p>
-          </div>
-
-          <div class="featured-card">
-            <div class="card-status-new">
-              <p>new</p>
-            </div>
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/19.jpg" alt="" class="card-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/20.jpg" alt="" class="card-photo-hover">
-            </a>
-            <p class="card-name">Strive Shoulder Pack</p>
-            <p class="card-cost">$78.00</p>
-          </div>
-
-          <div class="featured-card">
-            <div class="card-status-sale">
-              <p>Sale</p>
-            </div>
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/23.jpg" alt="" class="card-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/17.jpg" alt="" class="card-photo-hover">
-            </a>
-            <p class="card-name">Strive Shoulder Pack</p>
-            <p class="card-cost">$78.00</p>
-          </div>
-
-          <div class="featured-card">
-            <div class="card-status-sale">
-              <p>Sale</p>
-            </div>
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/32.jpg" alt="" class="card-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/33.jpg" alt="" class="card-photo-hover">
-            </a>
-            <p class="card-name">Strive Shoulder Pack</p>
-            <p class="card-cost">$78.00</p>
-          </div>
-        </div>
-      <!-- </div> -->
-    </div>
-
-    <!-- <div class="container-main"> -->
-
-    <!-- _________ITEMS________ -->
-    <div class="scrapper-items">
-      <!-- --------------------------------------------------------------- -->
-      <div class="item-1">
-        <div class="title-random-top">Random Furniture</div>
-        <div class="title-random-bottom">Random Products</div>
-
-        <div class="post post-1">
-          <div class="product">
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/widget/1.jpg" alt="" class="item-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/6.jpg" alt="" class="item-photo-hover">
-            </a>
-            <div class="description">
-              <div class="description__title">Push It Messanger Bag</div>
-              <div class="description__rating"></div>
-              <div class="description__price">$10.00</div>
+          <div class="col-md-6">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>
+                  Trending Categories
+                </h2>
+              </div>
+              <div class="tab_container">
+                <div class="t-link-box" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  <div class="number">
+                    <h5>
+                      01
+                    </h5>
+                  </div>
+                  <hr>
+                  <div class="t-name">
+                    <h5>
+                      Chairs
+                    </h5>
+                  </div>
+                </div>
+                <div class="t-link-box collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  <div class="number">
+                    <h5>
+                      02
+                    </h5>
+                  </div>
+                  <hr>
+                  <div class="t-name">
+                    <h5>
+                      Tables
+                    </h5>
+                  </div>
+                </div>
+                <div class="t-link-box collapsed" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  <div class="number">
+                    <h5>
+                      03
+                    </h5>
+                  </div>
+                  <hr>
+                  <div class="t-name">
+                    <h5>
+                      Bads
+                    </h5>
+                  </div>
+                </div>
+                <div class="t-link-box collapsed" data-toggle="collapse" data-target="#collapseFour"
+                  aria-expanded="false" aria-controls="collapseFour">
+                  <div class="number">
+                    <h5>
+                      04
+                    </h5>
+                  </div>
+                  <hr>
+                  <div class="t-name">
+                    <h5>
+                      Furnitures
+                    </h5>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="product pr-1">
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/widget/1.jpg" alt="" class="item-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/6.jpg" alt="" class="item-photo-hover">
-            </a>
-            <div class="description">
-              <div class="description__title">Sprite Foam Yoga Brick</div>
-              <div class="description__rating"></div>
-              <div class="description__price">$20.00</div>
+          <div class="col-md-6">
+            <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="img_container ">
+                <div class="box b-1">
+                  <div class="img-box">
+                    <img src="{% static 'images/t-1.jpg' %}" alt="">
+                  </div>
+                  <div class="img-box">
+                    <img src="{% static 'images/t-2.jpg' %}" alt="">
+                  </div>
+                </div>
+                <div class="box b-2">
+                  <div class="img-box">
+                    <img src="{% static 'images/t-3.jpg' %}" alt="">
+                  </div>
+                  <div class="img-box">
+                    <img src="{% static 'images/t-4.jpg' %}" alt="">
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+            <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="img_container ">
+                <div class="box b-1">
+                  <div class="img-box">
+                    <img src="{% static 'images/t-3.jpg' %}" alt="">
+                  </div>
+                  <div class="img-box">
+                    <img src="{% static 'images/t-4.jpg' %}" alt="">
+                  </div>
+                </div>
+                <div class="box b-2">
 
-          <div class="product">
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/widget/1.jpg" alt="" class="item-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/6.jpg" alt="" class="item-photo-hover">
-            </a>
-            <div class="description">
-              <div class="description__title">Dual Handle Cardio Ball</div>
-              <div class="description__rating"></div>
-              <div class="description__price">$20.00</div>
+                  <div class="img-box">
+                    <img src="{% static 'images/t-1.jpg' %}" alt="">
+                  </div>
+                  <div class="img-box">
+                    <img src="{% static 'images/t-2.jpg' %}" alt="">
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- --------------------------------------------------------------- -->
-      <div class="item2">
-        <div class="title-random-top">Random Furniture</div>
-        <div class="title-random-bottom">Random Products</div>
-
-        <div class="post">
-          <div class="product">
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/widget/1.jpg" alt="" class="item-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/6.jpg" alt="" class="item-photo-hover">
-            </a>
-            <div class="description">
-              <div class="description__title">Sprite Foam Yoga Brick</div>
-              <div class="description__rating"></div>
-              <div class="description__price">$10.00</div>
+            <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="img_container ">
+                <div class="box b-1">
+                  <div class="img-box">
+                    <img src="{% static 'images/t-4.jpg' %}" alt="">
+                  </div>
+                  <div class="img-box">
+                    <img src="{% static 'images/t-1.jpg' %}" alt="">
+                  </div>
+                </div>
+                <div class="box b-2">
+                  <div class="img-box">
+                    <img src="{% static 'images/t-3.jpg' %}" alt="">
+                  </div>
+                  <div class="img-box">
+                    <img src="{% static 'images/t-2.jpg' %}" alt="">
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+            <div class="collapse" id="collapseFour" aria-labelledby="headingfour" data-parent="#accordion">
+              <div class="img_container ">
+                <div class="box b-1">
+                  <div class="img-box">
+                    <img src="{% static 'images/t-1.jpg' %}" alt="">
+                  </div>
 
-          <div class="product">
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/widget/1.jpg" alt="" class="item-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/6.jpg" alt="" class="item-photo-hover">
-            </a>
-            <div class="description">
-              <div class="description__title">Sprite Foam Yoga Brick</div>
-              <div class="description__rating"></div>
-              <div class="description__price">$20.00</div>
+                  <div class="img-box">
+                    <img src="{% static 'images/t-4.jpg' %}" alt="">
+                  </div>
+                </div>
+                <div class="box b-2">
+                  <div class="img-box">
+                    <img src="{% static 'images/t-3.jpg' %}" alt="">
+                  </div>
+                  <div class="img-box">
+                    <img src="{% static 'images/t-2.jpg' %}" alt="">
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="product">
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/widget/1.jpg" alt="" class="item-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/6.jpg" alt="" class="item-photo-hover">
-            </a>
-            <div class="description">
-              <div class="description__title">Sprite Foam Yoga Brick</div>
-              <div class="description__rating"></div>
-              <div class="description__price">$20.00</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- --------------------------------------------------------------- -->
-      <div class="item3">
-        <div class="title-random-top">Random Furniture</div>
-        <div class="title-random-bottom">Random Products</div>
-
-        <div class="post num1">
-          <div class="product">
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/widget/1.jpg" alt="" class="item-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/6.jpg" alt="" class="item-photo-hover">
-            </a>
-            <div class="description">
-              <div class="description__title">Push It Messanger Bag</div>
-              <div class="description__rating"></div>
-              <div class="description__price">$10.00</div>
-            </div>
-          </div>
-
-          <div class="product">
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/widget/1.jpg" alt="" class="item-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/6.jpg" alt="" class="item-photo-hover">
-            </a>
-            <div class="description">
-              <div class="description__title">Sprite Foam Yoga Brick</div>
-              <div class="description__rating"></div>
-              <div class="description__price">$20.00</div>
-            </div>
-          </div>
-
-          <div class="product">
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/widget/1.jpg" alt="" class="item-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/6.jpg" alt="" class="item-photo-hover">
-            </a>
-            <div class="description">
-              <div class="description__title">Sprite Foam Yoga Brick</div>
-              <div class="description__rating"></div>
-              <div class="description__price">$20.00</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- --------------------------------------------------------------- -->
-      <div class="item4">
-        <div class="title-random-top">Random Furniture</div>
-        <div class="title-random-bottom">Random Products</div>
-
-        <div class="post num1">
-          <div class="product">
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/widget/1.jpg" alt="" class="item-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/6.jpg" alt="" class="item-photo-hover">
-            </a>
-            <div class="description">
-              <div class="description__title">Push It Messanger Bag</div>
-              <div class="description__rating"></div>
-              <div class="description__price">$10.00</div>
-            </div>
-          </div>
-
-          <div class="product">
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/widget/1.jpg" alt="" class="item-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/6.jpg" alt="" class="item-photo-hover">
-            </a>
-            <div class="description">
-              <div class="description__title">Sprite Foam Yoga Brick</div>
-              <div class="description__rating"></div>
-              <div class="description__price">$20.00</div>
-            </div>
-          </div>
-
-          <div class="product">
-            <a href="./shop.html">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/widget/1.jpg" alt="" class="item-photo">
-              <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/product/6.jpg" alt="" class="item-photo-hover">
-            </a>
-            <div class="description">
-              <div class="description__title">Sprite Foam Yoga Brick</div>
-              <div class="description__rating"></div>
-              <div class="description__price">$20.00</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- --------------------------------------------------------------- -->
-    </div>
-    <!-- _________ITEMS-END________ -->
-
-    <!-- _________BLOGS_________ -->
-    <div class="scrapper-blogs">
-      <!-- -----------ЗАГОЛОВОК------------- -->
-      <div class="title-news">Latest New</div>
-      <div class="line-blog">
-        <div class="main-title-blog">From our Blog</div>
-      </div>
-      <!-- -----------КОНЕЦ-ЗАГОЛОВКА------------- -->
-
-      <!-- --------------ОСНОВНАЯ-ЧАСТЬ-БЛОГА---------------- -->
-      <div class="container-blog">
-        <div class="bl__item bl-left-itm">
-          <div class="blog-photo blog-block">
-            <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/blog/1.jpg" alt="" class="blog-photo">
-            <div class="blog-data bl-left-dt">
-              <p>05</p>
-              <p>July</p>
-            </div>
-          </div>
-          <div class="blog-title bl-left-tt">
-            EODEM MODO TYPI QUI NUNC NOBIS
-          </div>
-          <div class="blog-info bl-left-info">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
-          </div>
-        </div>
-        <div class="bl__item bl-middle-itm">
-          <div class="blog-photo blog-block">
-            <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/blog/1.jpg" alt="" class="blog-photo">
-            <div class="blog-data bl-middle-dt">
-              <p>20</p>
-              <p>June</p>
-            </div>
-          </div>
-          <div class="blog-title bl-middle-tt">
-            TYPI NON HABENT CLARITATEM INSITAM
-          </div>
-          <div class="blog-info bl-middle-info">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form.
-          </div>
-        </div>
-
-        <div class="bl__item bl-rifht-itm">
-          <div class="blog-photo blog-block">
-            <img src="https://htmldemo.net/artfurniture/artfurniture/assets/img/blog/1.jpg" alt="" class="blog-photo">
-            <div class="blog-data bl-right-dt">
-              <p>15</p>
-              <p>May</p>
-            </div>
-          </div>
-          <div class="blog-title bl-right-tt">
-            CLARITAS EST ETIAM PROCESS DYNAME
-          </div>
-          <div class="blog-info bl-right-info">
-            Mirum est notare quam littera gothica, quam nunc putamus parum
-            claram, anteposuerit litterarum lorem ipsum dolor asmet.
-          </div>
-        </div>
-      </div>
-      <!-- <div class="line-end"></div> -->
-
-      <!-- -------------КОНЕЦ-ОСНОВНОГО-БЛОГА---------------- -->
-      <!-- ----------------ОСОБЕННОСТИ---------------- -->
-      <div class="feature-container">
-        <div class="feature">
-          <div class="logo-delivery"></div>
-          <div class="feature-info">
-            <div class="feature-title">FREE SHIPPING</div>
-            <div class="feature-text">Free shipping on all US order</div>
-          </div>
-        </div>
-
-        <div class="feature">
-          <div class="logo-online"></div>
-          <div class="feature-info">
-            <div class="feature-title">ONLINE SUPPORT 24/7</div>
-            <div class="feature-text">Support online 24 hours a day</div>
-          </div>
-        </div>
-
-        <div class="feature">
-          <div class="logo-money"></div>
-          <div class="feature-info">
-            <div class="feature-title">MONEY RETURN</div>
-            <div class="feature-text">Back guarantee under 7 days</div>
-          </div>
-        </div>
-
-        <div class="feature">
-          <div class="logo-member"></div>
-          <div class="feature-info">
-            <div class="feature-title">MONEY RETURN</div>
-            <div class="feature-text">Back guarantee under 7 days</div>
           </div>
         </div>
       </div>
     </div>
 
+  </section>
 
+  <!-- end trending section -->
 
-    <div class="container-message">
-      <div class="message-block">
-        <img src="https://kartinkin.net/pics/uploads/posts/2022-08/1660617551_30-kartinkin-net-p-raian-gosling-oboi-krasivo-34.jpg" alt="" class="message-photo">
-        <div class="message-text">  Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin.  </div>
-        <div class="message-bottom">
-          <h2>Rayan Gosling</h2>
-          <p>Chief Accountant</p>
+  <!-- discount section -->
+
+  <section class="discount_section  layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h2>
+              The Latest Collection
+            </h2>
+            <h2 class="main_heading">
+              50% DISCOUNT
+            </h2>
+
+            <div class="">
+              <a href="">
+                Buy Now
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="message-block">
-        <img src="https://kartinkin.net/pics/uploads/posts/2022-08/1660617551_30-kartinkin-net-p-raian-gosling-oboi-krasivo-34.jpg" alt="" class="message-photo">
-        <div class="message-text">  Pharetra vel turpis nunc eget lorem. Quisque id diam vel quam elementum pulvinar etiam. Urna porttitor rhoncus dolor purus non enim praesent elementum. </div>
-        <div class="message-bottom">
-          <h2>Rayan Gosling</h2>
-          <p>Chief Accountant</p>
-        </div>
-
-      </div>
-
-      <div class="message-block">
-        <img src="https://kartinkin.net/pics/uploads/posts/2022-08/1660617551_30-kartinkin-net-p-raian-gosling-oboi-krasivo-34.jpg" alt="" class="message-photo">
-        <div class="message-text">   Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin. Nibh nisl dictumst vestibulum rhoncus est pellentesque elit.    </div>
-        <div class="message-bottom">
-          <h2>Rayan Gosling</h2>
-          <p>Chief Accountant</p>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="{% static 'images/discount-img.png' %}" alt="">
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
 
-    <div class="container-partners">
-      <div class="partner">
-        <a href="https://www.adidas.com/us">
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="100px" height="100px" viewBox="0 0 1200.000000 809.000000"
- preserveAspectRatio="xMidYMid meet">
+  <!-- end discount section -->
 
-<g transform="translate(0.000000,809.000000) scale(0.100000,-0.100000)"
-fill="#5f5f5f" stroke="none">
-<path d="M6273 7582 c-597 -343 -881 -511 -878 -520 3 -8 557 -974 1232 -2148
-l1228 -2134 1184 0 c1114 0 1183 1 1177 17 -8 21 -3045 5275 -3054 5285 -4 3
--404 -222 -889 -500z"/>
-<path d="M4240 5714 c-481 -279 -876 -507 -878 -508 -1 -2 313 -547 698 -1211
-l700 -1209 0 -253 0 -253 255 0 255 0 0 250 0 250 924 2 925 3 -990 1715
-c-544 943 -995 1716 -1002 1717 -6 1 -406 -225 -887 -503z"/>
-<path d="M2175 3900 c-484 -280 -881 -515 -882 -522 -1 -7 73 -143 165 -303
-l167 -290 1183 -3 c650 -1 1182 -1 1182 1 0 2 -206 361 -458 798 -252 437
--463 802 -468 811 -8 15 -127 -52 -889 -492z"/>
-<path d="M4010 2355 c0 -234 -2 -425 -4 -425 -2 0 -29 16 -61 35 -185 111
--430 162 -655 136 -261 -31 -475 -135 -650 -318 -137 -142 -218 -285 -267
--471 -22 -83 -26 -119 -26 -247 -1 -165 11 -234 63 -375 93 -257 300 -478 556
--596 189 -88 439 -117 642 -75 116 24 223 64 330 122 l72 40 0 -66 0 -65 250
-0 250 0 0 1365 0 1365 -250 0 -250 0 0 -425z m-406 -743 c176 -64 321 -215
-377 -392 27 -86 30 -222 5 -305 -56 -189 -199 -342 -379 -405 -87 -31 -240
--38 -327 -15 -162 42 -289 137 -375 281 -53 88 -75 170 -75 278 0 171 50 289
-174 411 84 83 146 121 251 155 84 28 263 23 349 -8z"/>
-<path d="M7130 2356 l0 -425 -67 40 c-232 135 -536 172 -818 99 -113 -29 -284
--117 -381 -194 -182 -146 -308 -344 -367 -576 -18 -70 -21 -113 -21 -245 1
--140 4 -172 27 -257 111 -416 457 -727 876 -789 120 -17 302 -7 423 25 97 25
-242 86 298 126 l30 21 0 -65 0 -66 250 0 250 0 0 1365 0 1365 -250 0 -250 0 0
--424z m-445 -731 c258 -68 445 -305 445 -563 0 -163 -51 -285 -169 -403 -236
--237 -588 -241 -822 -9 -154 154 -210 344 -159 544 28 112 73 190 160 276 78
-79 162 129 256 155 68 18 217 18 289 0z"/>
-<path d="M960 2104 c-114 -17 -177 -31 -250 -56 -446 -155 -734 -582 -707
--1048 27 -461 346 -846 805 -972 65 -18 105 -21 252 -22 158 0 185 3 275 27
-62 16 145 49 218 86 l117 59 0 -64 0 -64 245 0 245 0 0 1020 0 1020 -245 0
--245 0 0 -80 c0 -44 -3 -80 -6 -80 -3 0 -19 9 -35 21 -52 36 -192 97 -274 118
--132 34 -300 48 -395 35z m260 -479 c202 -54 364 -214 426 -421 28 -91 23
--229 -10 -324 -82 -238 -309 -400 -559 -400 -163 0 -290 54 -413 175 -123 121
--174 240 -174 407 0 253 186 494 436 563 66 18 226 18 294 0z"/>
-<path d="M8723 2100 c-285 -40 -541 -191 -715 -420 -68 -89 -143 -246 -174
--365 -22 -84 -27 -123 -28 -245 -1 -152 8 -211 50 -340 103 -317 359 -572 679
--679 125 -41 234 -55 379 -48 182 9 336 54 481 140 l60 35 3 -64 3 -64 249 0
-250 0 0 1020 0 1020 -250 0 -249 0 -3 -79 -3 -79 -65 39 c-78 47 -199 92 -305
-114 -95 19 -277 27 -362 15z m287 -471 c150 -34 313 -166 383 -309 116 -236
-74 -486 -112 -670 -116 -115 -245 -170 -398 -170 -101 0 -165 15 -263 63 -250
-122 -383 413 -305 670 59 196 225 360 418 412 62 16 213 19 277 4z"/>
-<path d="M10895 2099 c-228 -27 -444 -133 -556 -272 -50 -62 -102 -171 -118
--245 -14 -68 -14 -186 0 -254 30 -145 141 -296 266 -361 122 -63 249 -96 574
--151 234 -40 301 -61 348 -110 95 -98 17 -256 -152 -308 -58 -17 -86 -20 -175
--15 -227 11 -358 105 -387 280 l-6 37 -265 0 -265 0 6 -58 c10 -88 57 -212
-109 -290 151 -228 438 -352 816 -352 466 0 779 170 875 473 115 363 -60 657
--459 772 -49 14 -191 43 -315 65 -239 41 -329 66 -392 106 -89 56 -93 167 -9
-238 88 73 366 87 489 24 75 -39 101 -83 126 -210 l5 -28 256 0 255 0 -6 48
-c-18 121 -82 260 -164 353 -175 199 -508 299 -856 258z"/>
-<path d="M4760 1070 l0 -1020 255 0 255 0 -2 1018 -3 1017 -252 3 -253 2 0
--1020z"/>
-</g>
-        </svg>
+  <!-- brand section -->
+
+  <section class="brand_section">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Featured Brands
+        </h2>
+      </div>
+      <div class="brand_container layout_padding2">
+        <div class="box">
+          <a href="">
+            <div class="new">
+              <h5>
+                New
+              </h5>
+            </div>
+            <div class="img-box">
+              <img src="{% static 'images/slider-img.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h6 class="price">
+                $100
+              </h6>
+              <h6>
+                Chair
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="box">
+          <a href="">
+            <div class="img-box">
+              <img src="{% static 'images/slider-img.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h6 class="price">
+                $100
+              </h6>
+              <h6>
+                Chair
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="box">
+          <a href="">
+            <div class="img-box">
+              <img src="{% static 'images/slider-img.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h6 class="price">
+                $100
+              </h6>
+              <h6>
+                Chair
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="box">
+          <a href="">
+            <div class="img-box">
+              <img src="{% static 'images/slider-img.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h6 class="price">
+                $100
+              </h6>
+              <h6>
+                Chair
+              </h6>
+            </div>
+          </a>
+        </div>
+      </div>
+      <a href="" class="brand-btn">
+        See More
       </a>
+    </div>
+  </section>
+
+  <!-- end brand section -->
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding">
+    <div class="container ">
+      <div class="heading_container">
+        <h2 class="">
+          Contact Us
+        </h2>
       </div>
-      <div class="partner">
-        <a href="https://www.adidas.com/us">
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
 
- width="100px" height="100px" viewBox="0 0 1200.000000 809.000000"
- preserveAspectRatio="xMidYMid meet">
-
-<g transform="translate(0.000000,809.000000) scale(0.100000,-0.100000)"
-fill="#5f5f5f" stroke="none">
-<path d="M6273 7582 c-597 -343 -881 -511 -878 -520 3 -8 557 -974 1232 -2148
-l1228 -2134 1184 0 c1114 0 1183 1 1177 17 -8 21 -3045 5275 -3054 5285 -4 3
--404 -222 -889 -500z"/>
-<path d="M4240 5714 c-481 -279 -876 -507 -878 -508 -1 -2 313 -547 698 -1211
-l700 -1209 0 -253 0 -253 255 0 255 0 0 250 0 250 924 2 925 3 -990 1715
-c-544 943 -995 1716 -1002 1717 -6 1 -406 -225 -887 -503z"/>
-<path d="M2175 3900 c-484 -280 -881 -515 -882 -522 -1 -7 73 -143 165 -303
-l167 -290 1183 -3 c650 -1 1182 -1 1182 1 0 2 -206 361 -458 798 -252 437
--463 802 -468 811 -8 15 -127 -52 -889 -492z"/>
-<path d="M4010 2355 c0 -234 -2 -425 -4 -425 -2 0 -29 16 -61 35 -185 111
--430 162 -655 136 -261 -31 -475 -135 -650 -318 -137 -142 -218 -285 -267
--471 -22 -83 -26 -119 -26 -247 -1 -165 11 -234 63 -375 93 -257 300 -478 556
--596 189 -88 439 -117 642 -75 116 24 223 64 330 122 l72 40 0 -66 0 -65 250
-0 250 0 0 1365 0 1365 -250 0 -250 0 0 -425z m-406 -743 c176 -64 321 -215
-377 -392 27 -86 30 -222 5 -305 -56 -189 -199 -342 -379 -405 -87 -31 -240
--38 -327 -15 -162 42 -289 137 -375 281 -53 88 -75 170 -75 278 0 171 50 289
-174 411 84 83 146 121 251 155 84 28 263 23 349 -8z"/>
-<path d="M7130 2356 l0 -425 -67 40 c-232 135 -536 172 -818 99 -113 -29 -284
--117 -381 -194 -182 -146 -308 -344 -367 -576 -18 -70 -21 -113 -21 -245 1
--140 4 -172 27 -257 111 -416 457 -727 876 -789 120 -17 302 -7 423 25 97 25
-242 86 298 126 l30 21 0 -65 0 -66 250 0 250 0 0 1365 0 1365 -250 0 -250 0 0
--424z m-445 -731 c258 -68 445 -305 445 -563 0 -163 -51 -285 -169 -403 -236
--237 -588 -241 -822 -9 -154 154 -210 344 -159 544 28 112 73 190 160 276 78
-79 162 129 256 155 68 18 217 18 289 0z"/>
-<path d="M960 2104 c-114 -17 -177 -31 -250 -56 -446 -155 -734 -582 -707
--1048 27 -461 346 -846 805 -972 65 -18 105 -21 252 -22 158 0 185 3 275 27
-62 16 145 49 218 86 l117 59 0 -64 0 -64 245 0 245 0 0 1020 0 1020 -245 0
--245 0 0 -80 c0 -44 -3 -80 -6 -80 -3 0 -19 9 -35 21 -52 36 -192 97 -274 118
--132 34 -300 48 -395 35z m260 -479 c202 -54 364 -214 426 -421 28 -91 23
--229 -10 -324 -82 -238 -309 -400 -559 -400 -163 0 -290 54 -413 175 -123 121
--174 240 -174 407 0 253 186 494 436 563 66 18 226 18 294 0z"/>
-<path d="M8723 2100 c-285 -40 -541 -191 -715 -420 -68 -89 -143 -246 -174
--365 -22 -84 -27 -123 -28 -245 -1 -152 8 -211 50 -340 103 -317 359 -572 679
--679 125 -41 234 -55 379 -48 182 9 336 54 481 140 l60 35 3 -64 3 -64 249 0
-250 0 0 1020 0 1020 -250 0 -249 0 -3 -79 -3 -79 -65 39 c-78 47 -199 92 -305
-114 -95 19 -277 27 -362 15z m287 -471 c150 -34 313 -166 383 -309 116 -236
-74 -486 -112 -670 -116 -115 -245 -170 -398 -170 -101 0 -165 15 -263 63 -250
-122 -383 413 -305 670 59 196 225 360 418 412 62 16 213 19 277 4z"/>
-<path d="M10895 2099 c-228 -27 -444 -133 -556 -272 -50 -62 -102 -171 -118
--245 -14 -68 -14 -186 0 -254 30 -145 141 -296 266 -361 122 -63 249 -96 574
--151 234 -40 301 -61 348 -110 95 -98 17 -256 -152 -308 -58 -17 -86 -20 -175
--15 -227 11 -358 105 -387 280 l-6 37 -265 0 -265 0 6 -58 c10 -88 57 -212
-109 -290 151 -228 438 -352 816 -352 466 0 779 170 875 473 115 363 -60 657
--459 772 -49 14 -191 43 -315 65 -239 41 -329 66 -392 106 -89 56 -93 167 -9
-238 88 73 366 87 489 24 75 -39 101 -83 126 -210 l5 -28 256 0 255 0 -6 48
-c-18 121 -82 260 -164 353 -175 199 -508 299 -856 258z"/>
-<path d="M4760 1070 l0 -1020 255 0 255 0 -2 1018 -3 1017 -252 3 -253 2 0
--1020z"/>
-</g>
-        </svg>
-        </a>
-
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form action="">
+            <div>
+              <input type="text" placeholder="Name" />
+            </div>
+            <div>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div>
+              <input type="text" placeholder="Phone" />
+            </div>
+            <div>
+              <input type="text" class="message-box" placeholder="Message" />
+            </div>
+            <div class="d-flex ">
+              <button>
+                SEND
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div class="map_container">
+            <div class="map-responsive">
+              <iframe
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
+                width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="partner">
-        <a href="https://www.adidas.com/us">
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="100px" height="100px" viewBox="0 0 1200.000000 809.000000"
- preserveAspectRatio="xMidYMid meet">
+    </div>
+  </section>
 
-<g transform="translate(0.000000,809.000000) scale(0.100000,-0.100000)"
-fill="#5f5f5f" stroke="none">
-<path d="M6273 7582 c-597 -343 -881 -511 -878 -520 3 -8 557 -974 1232 -2148
-l1228 -2134 1184 0 c1114 0 1183 1 1177 17 -8 21 -3045 5275 -3054 5285 -4 3
--404 -222 -889 -500z"/>
-<path d="M4240 5714 c-481 -279 -876 -507 -878 -508 -1 -2 313 -547 698 -1211
-l700 -1209 0 -253 0 -253 255 0 255 0 0 250 0 250 924 2 925 3 -990 1715
-c-544 943 -995 1716 -1002 1717 -6 1 -406 -225 -887 -503z"/>
-<path d="M2175 3900 c-484 -280 -881 -515 -882 -522 -1 -7 73 -143 165 -303
-l167 -290 1183 -3 c650 -1 1182 -1 1182 1 0 2 -206 361 -458 798 -252 437
--463 802 -468 811 -8 15 -127 -52 -889 -492z"/>
-<path d="M4010 2355 c0 -234 -2 -425 -4 -425 -2 0 -29 16 -61 35 -185 111
--430 162 -655 136 -261 -31 -475 -135 -650 -318 -137 -142 -218 -285 -267
--471 -22 -83 -26 -119 -26 -247 -1 -165 11 -234 63 -375 93 -257 300 -478 556
--596 189 -88 439 -117 642 -75 116 24 223 64 330 122 l72 40 0 -66 0 -65 250
-0 250 0 0 1365 0 1365 -250 0 -250 0 0 -425z m-406 -743 c176 -64 321 -215
-377 -392 27 -86 30 -222 5 -305 -56 -189 -199 -342 -379 -405 -87 -31 -240
--38 -327 -15 -162 42 -289 137 -375 281 -53 88 -75 170 -75 278 0 171 50 289
-174 411 84 83 146 121 251 155 84 28 263 23 349 -8z"/>
-<path d="M7130 2356 l0 -425 -67 40 c-232 135 -536 172 -818 99 -113 -29 -284
--117 -381 -194 -182 -146 -308 -344 -367 -576 -18 -70 -21 -113 -21 -245 1
--140 4 -172 27 -257 111 -416 457 -727 876 -789 120 -17 302 -7 423 25 97 25
-242 86 298 126 l30 21 0 -65 0 -66 250 0 250 0 0 1365 0 1365 -250 0 -250 0 0
--424z m-445 -731 c258 -68 445 -305 445 -563 0 -163 -51 -285 -169 -403 -236
--237 -588 -241 -822 -9 -154 154 -210 344 -159 544 28 112 73 190 160 276 78
-79 162 129 256 155 68 18 217 18 289 0z"/>
-<path d="M960 2104 c-114 -17 -177 -31 -250 -56 -446 -155 -734 -582 -707
--1048 27 -461 346 -846 805 -972 65 -18 105 -21 252 -22 158 0 185 3 275 27
-62 16 145 49 218 86 l117 59 0 -64 0 -64 245 0 245 0 0 1020 0 1020 -245 0
--245 0 0 -80 c0 -44 -3 -80 -6 -80 -3 0 -19 9 -35 21 -52 36 -192 97 -274 118
--132 34 -300 48 -395 35z m260 -479 c202 -54 364 -214 426 -421 28 -91 23
--229 -10 -324 -82 -238 -309 -400 -559 -400 -163 0 -290 54 -413 175 -123 121
--174 240 -174 407 0 253 186 494 436 563 66 18 226 18 294 0z"/>
-<path d="M8723 2100 c-285 -40 -541 -191 -715 -420 -68 -89 -143 -246 -174
--365 -22 -84 -27 -123 -28 -245 -1 -152 8 -211 50 -340 103 -317 359 -572 679
--679 125 -41 234 -55 379 -48 182 9 336 54 481 140 l60 35 3 -64 3 -64 249 0
-250 0 0 1020 0 1020 -250 0 -249 0 -3 -79 -3 -79 -65 39 c-78 47 -199 92 -305
-114 -95 19 -277 27 -362 15z m287 -471 c150 -34 313 -166 383 -309 116 -236
-74 -486 -112 -670 -116 -115 -245 -170 -398 -170 -101 0 -165 15 -263 63 -250
-122 -383 413 -305 670 59 196 225 360 418 412 62 16 213 19 277 4z"/>
-<path d="M10895 2099 c-228 -27 -444 -133 -556 -272 -50 -62 -102 -171 -118
--245 -14 -68 -14 -186 0 -254 30 -145 141 -296 266 -361 122 -63 249 -96 574
--151 234 -40 301 -61 348 -110 95 -98 17 -256 -152 -308 -58 -17 -86 -20 -175
--15 -227 11 -358 105 -387 280 l-6 37 -265 0 -265 0 6 -58 c10 -88 57 -212
-109 -290 151 -228 438 -352 816 -352 466 0 779 170 875 473 115 363 -60 657
--459 772 -49 14 -191 43 -315 65 -239 41 -329 66 -392 106 -89 56 -93 167 -9
-238 88 73 366 87 489 24 75 -39 101 -83 126 -210 l5 -28 256 0 255 0 -6 48
-c-18 121 -82 260 -164 353 -175 199 -508 299 -856 258z"/>
-<path d="M4760 1070 l0 -1020 255 0 255 0 -2 1018 -3 1017 -252 3 -253 2 0
--1020z"/>
-</g>
-        </svg>
-        </a>
+  <!-- end contact section -->
 
-
-      </div>
-      <div class="partner">
-        <a href="https://www.adidas.com/us">
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="100px" height="100px" viewBox="0 0 1200.000000 809.000000"
- preserveAspectRatio="xMidYMid meet">
-
-<g transform="translate(0.000000,809.000000) scale(0.100000,-0.100000)"
-fill="#5f5f5f" stroke="none">
-<path d="M6273 7582 c-597 -343 -881 -511 -878 -520 3 -8 557 -974 1232 -2148
-l1228 -2134 1184 0 c1114 0 1183 1 1177 17 -8 21 -3045 5275 -3054 5285 -4 3
--404 -222 -889 -500z"/>
-<path d="M4240 5714 c-481 -279 -876 -507 -878 -508 -1 -2 313 -547 698 -1211
-l700 -1209 0 -253 0 -253 255 0 255 0 0 250 0 250 924 2 925 3 -990 1715
-c-544 943 -995 1716 -1002 1717 -6 1 -406 -225 -887 -503z"/>
-<path d="M2175 3900 c-484 -280 -881 -515 -882 -522 -1 -7 73 -143 165 -303
-l167 -290 1183 -3 c650 -1 1182 -1 1182 1 0 2 -206 361 -458 798 -252 437
--463 802 -468 811 -8 15 -127 -52 -889 -492z"/>
-<path d="M4010 2355 c0 -234 -2 -425 -4 -425 -2 0 -29 16 -61 35 -185 111
--430 162 -655 136 -261 -31 -475 -135 -650 -318 -137 -142 -218 -285 -267
--471 -22 -83 -26 -119 -26 -247 -1 -165 11 -234 63 -375 93 -257 300 -478 556
--596 189 -88 439 -117 642 -75 116 24 223 64 330 122 l72 40 0 -66 0 -65 250
-0 250 0 0 1365 0 1365 -250 0 -250 0 0 -425z m-406 -743 c176 -64 321 -215
-377 -392 27 -86 30 -222 5 -305 -56 -189 -199 -342 -379 -405 -87 -31 -240
--38 -327 -15 -162 42 -289 137 -375 281 -53 88 -75 170 -75 278 0 171 50 289
-174 411 84 83 146 121 251 155 84 28 263 23 349 -8z"/>
-<path d="M7130 2356 l0 -425 -67 40 c-232 135 -536 172 -818 99 -113 -29 -284
--117 -381 -194 -182 -146 -308 -344 -367 -576 -18 -70 -21 -113 -21 -245 1
--140 4 -172 27 -257 111 -416 457 -727 876 -789 120 -17 302 -7 423 25 97 25
-242 86 298 126 l30 21 0 -65 0 -66 250 0 250 0 0 1365 0 1365 -250 0 -250 0 0
--424z m-445 -731 c258 -68 445 -305 445 -563 0 -163 -51 -285 -169 -403 -236
--237 -588 -241 -822 -9 -154 154 -210 344 -159 544 28 112 73 190 160 276 78
-79 162 129 256 155 68 18 217 18 289 0z"/>
-<path d="M960 2104 c-114 -17 -177 -31 -250 -56 -446 -155 -734 -582 -707
--1048 27 -461 346 -846 805 -972 65 -18 105 -21 252 -22 158 0 185 3 275 27
-62 16 145 49 218 86 l117 59 0 -64 0 -64 245 0 245 0 0 1020 0 1020 -245 0
--245 0 0 -80 c0 -44 -3 -80 -6 -80 -3 0 -19 9 -35 21 -52 36 -192 97 -274 118
--132 34 -300 48 -395 35z m260 -479 c202 -54 364 -214 426 -421 28 -91 23
--229 -10 -324 -82 -238 -309 -400 -559 -400 -163 0 -290 54 -413 175 -123 121
--174 240 -174 407 0 253 186 494 436 563 66 18 226 18 294 0z"/>
-<path d="M8723 2100 c-285 -40 -541 -191 -715 -420 -68 -89 -143 -246 -174
--365 -22 -84 -27 -123 -28 -245 -1 -152 8 -211 50 -340 103 -317 359 -572 679
--679 125 -41 234 -55 379 -48 182 9 336 54 481 140 l60 35 3 -64 3 -64 249 0
-250 0 0 1020 0 1020 -250 0 -249 0 -3 -79 -3 -79 -65 39 c-78 47 -199 92 -305
-114 -95 19 -277 27 -362 15z m287 -471 c150 -34 313 -166 383 -309 116 -236
-74 -486 -112 -670 -116 -115 -245 -170 -398 -170 -101 0 -165 15 -263 63 -250
-122 -383 413 -305 670 59 196 225 360 418 412 62 16 213 19 277 4z"/>
-<path d="M10895 2099 c-228 -27 -444 -133 -556 -272 -50 -62 -102 -171 -118
--245 -14 -68 -14 -186 0 -254 30 -145 141 -296 266 -361 122 -63 249 -96 574
--151 234 -40 301 -61 348 -110 95 -98 17 -256 -152 -308 -58 -17 -86 -20 -175
--15 -227 11 -358 105 -387 280 l-6 37 -265 0 -265 0 6 -58 c10 -88 57 -212
-109 -290 151 -228 438 -352 816 -352 466 0 779 170 875 473 115 363 -60 657
--459 772 -49 14 -191 43 -315 65 -239 41 -329 66 -392 106 -89 56 -93 167 -9
-238 88 73 366 87 489 24 75 -39 101 -83 126 -210 l5 -28 256 0 255 0 -6 48
-c-18 121 -82 260 -164 353 -175 199 -508 299 -856 258z"/>
-<path d="M4760 1070 l0 -1020 255 0 255 0 -2 1018 -3 1017 -252 3 -253 2 0
--1020z"/>
-</g>
-        </svg>
-        </a>
-
-
+  <!-- client section -->
+  <section class="client_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Testimonial
+        </h2>
       </div>
     </div>
 
+    <div class="container">
+      <div class="client_container layout_padding2">
+        <div class="client_box b-1">
+          <div class="client-id">
+            <div class="img-box">
+              <img src="{% static 'images/client-1.png' %}" alt="" />
+            </div>
+            <div class="name">
+              <h5>
+                Magna
+              </h5>
+              <p>
+                Consectetur adipiscing
+              </p>
+            </div>
+          </div>
+          <div class="detail">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum
+            </p>
+            <div>
+              <div class="arrow_img">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="client_box b-2">
+          <div class="client-id">
+            <div class="img-box">
+              <img src="{% static 'images/client-2.png' %}" alt="" />
+            </div>
+            <div class="name">
+              <h5>
+                Aliqua
+              </h5>
+              <p>
+                Consectetur adipiscing
+              </p>
+
+            </div>
+          </div>
+          <div class="detail">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum
+            </p>
+            <div>
+              <div class="arrow_img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="info_logo">
+        <h2>
+          Digitf
+        </h2>
+      </div>
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h5>
+              About Shop
+            </h5>
+            <div>
+              <div class="img-box">
+                <img src="{% static 'images/location-white.png' %}" width="18px" alt="">
+              </div>
+              <p>
+                Address
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="{% static 'images/telephone-white.png' %}" width="12px" alt="">
+              </div>
+              <p>
+                +01 1234567890
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="{% static 'images/envelope-white.png' %}" width="18px" alt="">
+              </div>
+              <p>
+                demo@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5>
+              Informations
+            </h5>
+            <p>
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info_insta">
+            <h5>
+              Instagram
+            </h5>
+            <div class="insta_container">
+              <div>
+                <a href="">
+                  <div class="insta-box b-1">
+                    <img src="{% static 'images/i-1.jpg' %}" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="insta-box b-2">
+                    <img src="{% static 'images/i-2.jpg' %}" alt="">
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a href="">
+                  <div class="insta-box b-3">
+                    <img src="{% static 'images/i-3.jpg' %}" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="insta-box b-4">
+                    <img src="{% static 'images/i-4.jpg' %}" alt="">
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <div class="insta-box b-3">
+                    <img src="{% static 'images/i-5.jpg' %}" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="insta-box b-4">
+                    <img src="{% static 'images/i-6.jpg' %}" alt="">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5>
+              Newsletter
+            </h5>
+            <form action="">
+              <input type="email" placeholder="Enter your email">
+              <button>
+                Subscribe
+              </button>
+            </form>
+            <div class="social_box">
+              <a href="">
+                <img src="{% static 'images/fb.png' %}" alt="">
+              </a>
+              <a href="">
+                <img src="{% static 'images/twitter.png' %}" alt="">
+              </a>
+              <a href="">
+                <img src="{% static 'images/linkedin.png' %}" alt="">
+              </a>
+              <a href="">
+                <img src="{% static 'images/youtube.png' %}" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
 
 {% endblock %}

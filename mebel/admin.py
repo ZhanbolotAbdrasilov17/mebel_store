@@ -29,3 +29,8 @@ class EmailAdminList(admin.ModelAdmin):
     list_display = ('address', 'id')
     list_display_links = ('address', 'id')
     search_fields = ('address', 'id')
+
+
+@admin.register(News)
+class NewsAdminList(admin.ModelAdmin):
+    pass

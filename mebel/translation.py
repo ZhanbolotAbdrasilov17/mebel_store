@@ -12,3 +12,7 @@ class FurnitureCategoryTranslation(TranslationOptions):
 @register(Partner)
 class PartnerTranslation(TranslationOptions):
     fields = ('title',)
+
+@register(News)
+class NewsTranslation(TranslationOptions):
+    fields = ('title', 'desc')

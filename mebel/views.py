@@ -26,28 +26,34 @@ def home(request):
     category_image_furniture_5 = ItemsFurniture.objects.get(id=5)
     category_image_furniture_6 = ItemsFurniture.objects.get(id=6)
 
+    sales_products = Furniture.objects.filter(status='sale')
+
+    news = News.objects.all()
 
 
 
     context = {"image_up_1": image_up_1, "image_up_2": image_up_2, "image_up_3": image_up_3,
                "cif1":category_image_furniture_1, "cif2":category_image_furniture_2, "cif3":category_image_furniture_3,
-               "cif4":category_image_furniture_4, "cif5":category_image_furniture_5, "cif6":category_image_furniture_6
-               }
+               "cif4":category_image_furniture_4, "cif5":category_image_furniture_5, "cif6":category_image_furniture_6,
+               "sales_products": sales_products, news: "news"}
     return render(request, "main.html", context)
 
 
-def products(requset):
+def products(request):
     categories = FurnitureCategory.objects.all()
     all_products = Furniture.objects.all()
     context = {"categories": categories, "all_products": all_products}
-    return render(requset, "products.html", context)
+    return render(request, "products.html", context)
 
 
-def category(requset):
+def shop(request):
+    return render(request, "shop.html",)
+
+def category(request):
     categories = FurnitureCategory.objects.all()
     last_10_products = Furniture.objects.all()
     context = {"categories": categories, "last_10_products": last_10_products}
-    return render(requset, "category.html", context)
+    return render(request, "category.html", context)
 
 
 class CategoryDetail(DetailView):
@@ -70,7 +76,6 @@ class ProductDetail(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
-        context['text'] = FurnitureFullDescription.objects.all()
         return context
 
 
@@ -117,7 +122,7 @@ class MailCreateView(View):
                 'Почта клиента или партнера',
                 message,
                 'oriyental.treyd@mail.ru',
-                ['itpythonzhanbolot@gmail.com'],
+                ['orienttrade2016@gmail.com'],
                 fail_silently=False,
             )
 
